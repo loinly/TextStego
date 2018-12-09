@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="45f07481-088d-4941-9c97-523deed5cc1c" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="textlab" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pretreatment/pretreatment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+              <folding>
+                <element signature="e#34#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ll</find>
+      <find>youth_string</find>
+      <find>encrypt</find>
+      <find>dec2bin_6</find>
+      <find>decode_string</find>
+      <find>info2len</find>
+      <find>__sitebin</find>
+      <find>keyword_name</find>
+      <find>key</find>
+      <find>filename</find>
+      <find>MODELPATH</find>
+      <find>PREPAPATH</find>
+      <find>indexpath</find>
+      <find>SPIDERPATH</find>
+      <find>request1</find>
+      <find>result c-container</find>
+      <find>new_urls</find>
+      <find>dirname</find>
+      <find>urls</find>
+      <find>__dec2bin</find>
+      <find>location</find>
+      <find>__dec2bin_6</find>
+      <find>string_lastest</find>
+      <find>Hit</find>
+      <find>hidekeys</find>
+      <find>urlmgc</find>
+      <find>ENCODING</find>
+      <find>unMCount</find>
+      <find>maxH</find>
+      <find>base64</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>length</replace>
+      <replace>base64</replace>
+      <replace>__dec2bin_6</replace>
+      <replace>string</replace>
+      <replace>infolen</replace>
+      <replace>self.filename</replace>
+      <replace>req</replace>
+      <replace>urls</replace>
+      <replace>dirpath</replace>
+      <replace>page_urls</replace>
+      <replace>_dec2bin</replace>
+      <replace>locate</replace>
+      <replace>_dec2bin_6</replace>
+      <replace>string_last</replace>
+      <replace>hidekey</replace>
+      <replace>manager</replace>
+      <replace>encoding</replace>
+      <replace>unmatch</replace>
+      <replace>maxh</replace>
+      <replace>Base64</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>F:\Home\Python\NetBigData\textlab</dir>
+      <dir>F:\Home\Python\NetBigData\textlab\com</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/com/spider/baidu/DataOutput.py" />
+        <option value="$PROJECT_DIR$/com/spider/URL/Htmlparse.py" />
+        <option value="$PROJECT_DIR$/com/spider/URL/UrLManager.py" />
+        <option value="$PROJECT_DIR$/com/spider/URL/SpiderMan.py" />
+        <option value="$PROJECT_DIR$/com/spider/link/HtmlDownloader.py" />
+        <option value="$PROJECT_DIR$/com/spider/baiduspider.py" />
+        <option value="$PROJECT_DIR$/com/spider/spidercontent/Downloader.py" />
+        <option value="$PROJECT_DIR$/com/spider/spidercontent/Parser.py" />
+        <option value="$PROJECT_DIR$/com/fileutils/fileutil.py" />
+        <option value="$PROJECT_DIR$/com/config/config.py" />
+        <option value="$PROJECT_DIR$/com/spider/spidercontent/spiderTo.py" />
+        <option value="$PROJECT_DIR$/com/spider/link/SpiderMan.py" />
+        <option value="$PROJECT_DIR$/spider/spidercontent/spiderTo.py" />
+        <option value="$PROJECT_DIR$/pretreatment/preprocess.py" />
+        <option value="$PROJECT_DIR$/pretreatment/segment.py" />
+        <option value="$PROJECT_DIR$/pretreatment/jieba.py" />
+        <option value="$PROJECT_DIR$/1.txt" />
+        <option value="$PROJECT_DIR$/pretreatment/jiebaseg.py" />
+        <option value="$PROJECT_DIR$/encode/base64.py" />
+        <option value="$PROJECT_DIR$/spiderlink/urls.txt" />
+        <option value="$PROJECT_DIR$/spiderlink/page_urls.txt" />
+        <option value="$PROJECT_DIR$/spidercontent/failed.txt" />
+        <option value="$PROJECT_DIR$/spider/googlespider.py" />
+        <option value="$PROJECT_DIR$/spiderlink/SpiderMan.py" />
+        <option value="$PROJECT_DIR$/encode/location_info.py" />
+        <option value="$PROJECT_DIR$/encode/ende_base64.py" />
+        <option value="$PROJECT_DIR$/encode/location_new.py" />
+        <option value="$PROJECT_DIR$/encode/decode_base64.py" />
+        <option value="$PROJECT_DIR$/2.txt" />
+        <option value="$PROJECT_DIR$/spiderlink/UrLManager.py" />
+        <option value="$PROJECT_DIR$/spiderlink/HtmlDownloader.py" />
+        <option value="$PROJECT_DIR$/spiderlink/Htmlparse.py" />
+        <option value="$PROJECT_DIR$/spidercontent/URLMgc.py" />
+        <option value="$PROJECT_DIR$/spiderlink/DataOutput.py" />
+        <option value="$PROJECT_DIR$/spiderlink/HtmlManager.py" />
+        <option value="$PROJECT_DIR$/spiderlink/SpiderLink.py" />
+        <option value="$PROJECT_DIR$/encode/coding.py" />
+        <option value="$PROJECT_DIR$/spidercontent/Parser.py" />
+        <option value="$PROJECT_DIR$/hide/extract.py" />
+        <option value="$PROJECT_DIR$/pretreatment/count.py" />
+        <option value="$PROJECT_DIR$/image/Image.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/pretreatment/pretreatment.py" />
+        <option value="$PROJECT_DIR$/fileutil.py" />
+        <option value="$PROJECT_DIR$/encode/position.py" />
+        <option value="$PROJECT_DIR$/index/Index.py" />
+        <option value="$PROJECT_DIR$/hide/hide.py" />
+        <option value="$PROJECT_DIR$/index/Search.py" />
+        <option value="$PROJECT_DIR$/word2vec/Word2vec.py" />
+        <option value="$PROJECT_DIR$/spidercontent/spiderTo.py" />
+        <option value="$PROJECT_DIR$/spidercontent/Downloader.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="550" />
+    <option name="y" value="45" />
+    <option name="width" value="1365" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
+              <item name="hide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
+              <item name="pretreatment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
+              <item name="spiderlink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
+              <item name="word2vec" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.splitter.proportion" value="0.2507433" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/com/word2vec/model.txt" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Home\Python\NetBigData\textlab\1" />
+      <recent name="F:\Home\Python\NetBigData\textlab\spidercontent" />
+      <recent name="F:\Home\Python\NetBigData\textlab\com\spider" />
+      <recent name="F:\Home\Python\NetBigData\textlab\com\spider\testfiles\3" />
+      <recent name="F:\Home\Python\NetBigData\textlab\com\spider\testfiles\2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Home\Python\NetBigData\textlab\encode" />
+      <recent name="F:\Home\Python\NetBigData\textlab" />
+      <recent name="F:\Home\Python\NetBigData\textlab\com" />
+      <recent name="F:\Home\Python\NetBigData\textlab\Data" />
+      <recent name="F:\Home\Python\NetBigData\textlab\com\encode\testfiles" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.hide">
+    <configuration name="Image" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image/Image.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/index" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index/Index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Search" type="PythonConfigurationType" factoryName="Python">
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/index" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index/Search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="count" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pretreatment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pretreatment/count.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hide" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hide" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hide/hide.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="position" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/encode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/encode/position.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Search" />
+      <item itemvalue="Python.Index" />
+      <item itemvalue="Python.hide" />
+      <item itemvalue="Python.count" />
+      <item itemvalue="Python.Image" />
+      <item itemvalue="Python.position" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.hide" />
+        <item itemvalue="Python.position" />
+        <item itemvalue="Python.Image" />
+        <item itemvalue="Python.count" />
+        <item itemvalue="Python.Index" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45f07481-088d-4941-9c97-523deed5cc1c" name="Default" comment="" />
+      <created>1540540112142</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540540112142</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8606702" visible="true" weight="0.14993395" />
+      <window_info id="Structure" order="1" sideWeight="0.40221402" side_tool="true" weight="0.16380449" />
+      <window_info id="Favorites" order="2" sideWeight="0.1393298" side_tool="true" weight="0.17107001" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.56276447" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" weight="0.028288543" />
+      <window_info anchor="bottom" x="47" y="128" width="1514" height="637" id="Debug" order="3" weight="0.0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.41018388" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.04384724" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006667" side_tool="true" weight="0.9585122" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985294" visible="true" weight="0.20739762" />
+      <window_info id="Structure" order="1" sideWeight="0.50147057" side_tool="true" weight="0.2338177" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.56276447" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" weight="0.09335219" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52639085" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.5148515" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.06506365" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006667" side_tool="true" weight="0.9585122" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spider/pa.py" />
+    <entry file="file://$PROJECT_DIR$/spider/baiduspider.py" />
+    <entry file="file://$PROJECT_DIR$/encode/testfiles/location1.py" />
+    <entry file="file://$PROJECT_DIR$/encode/testfiles/our_base64.py" />
+    <entry file="file://$PROJECT_DIR$/encode/ende_base64.py" />
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/jieba/analyse/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="1324" column="8" selection-start-line="1324" selection-start-column="8" selection-end-line="1324" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/analysis/tokenizers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5436">
+          <caret line="322" column="7" lean-forward="true" selection-start-line="322" selection-start-column="7" selection-end-line="322" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/collectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="1033" column="22" selection-start-line="1033" selection-start-column="19" selection-end-line="1033" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3794">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" lean-forward="true" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/models/base_any2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="1390" column="8" selection-start-line="1390" selection-start-column="8" selection-end-line="1390" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/models/keyedvectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="451" selection-start-line="451" selection-end-line="451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="1688" selection-start-line="1688" selection-end-line="1688" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiderlink/HtmlDownloader.py" />
+    <entry file="file://$PROJECT_DIR$/spiderlink/Htmlparse.py" />
+    <entry file="file://$PROJECT_DIR$/spiderlink/UrLManager.py" />
+    <entry file="file://$PROJECT_DIR$/spidercontent/URLMgc.py" />
+    <entry file="file://$PROJECT_DIR$/pretreatment/jiebaseg.py" />
+    <entry file="file://$PROJECT_DIR$/spidercontent/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1/2.txt" />
+    <entry file="file://$PROJECT_DIR$/1/1.txt" />
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/searching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="731" column="8" selection-start-line="731" selection-start-column="8" selection-end-line="731" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hide/Infokws.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="2624" column="4" selection-start-line="2624" selection-start-column="4" selection-end-line="2624" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/Image.py" />
+    <entry file="file://$USER_HOME$/Desktop/data.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encode/location_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#11#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="1207" column="20" selection-start-line="1207" selection-start-column="20" selection-end-line="1207" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/shutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-957408531/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503">
+          <caret line="4212" column="58" selection-start-line="4212" selection-start-column="58" selection-end-line="4212" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/LabData/NetBigData/prepaper/信息_载体_秘密_传递_情况_成为_热点_修改_隐藏/09_04_834_基于图像多特征的无载体信息隐藏算法研究与实现-手机知网.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/fileinput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="406" selection-start-line="406" selection-end-line="406" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encode/coding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#160#993#0" />
+            <element signature="e#2699#3147#0" />
+            <element signature="e#3187#4002#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/Index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#36#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/Search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encode/position.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="60" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <element signature="e#2972#3557#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiderlink/SpiderLink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiderlink/HtmlManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiderlink/DataOutput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hide/extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1929">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec/Word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+          <folding>
+            <element signature="e#34#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/spiderTo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/Downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hide/hide.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretreatment/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <marker date="1544078285523" expanded="true" signature="110:115" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretreatment/pretreatment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
