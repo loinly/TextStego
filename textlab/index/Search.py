@@ -21,8 +21,8 @@ class Search(object):
         kwpath = os.path.join(config.hidekwpath, '_'.join(self.keys))
         if not os.path.exists(savepath):
             os.mkdir(savepath)
-        if not os.path.exists(savepath):
-            os.mkdir(kwpath)
+        else:
+            FileUtil.init_path(savepath)
         return savepath, kwpath
 
     def query(self, keywords, kwpath=''):

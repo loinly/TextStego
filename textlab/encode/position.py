@@ -67,26 +67,23 @@ class Location(object):
         return _url, _res, p
 
     def describe(self, path):
-
         info_kws = self.keywords[:]
         res_list = []
         hidepath = os.path.join(config.hidepath, path)
-
         for filename in os.listdir(hidepath):
-            tmppath = os.path.join(hidepath, filename)
-            if os.path.isdir(tmppath):         # dir: 需要选取最佳网页
-                filename = self.optimal(tmppath, info_kws)
-
+            filename = os.path.join(hidepath, filename)
+            if os.path.isdir(filename):         # dir: 需要选取最佳网页
+                filename = os.path.join(filename, self.optimal(filename, info_kws))
             if 'unMatch' in filename:
-                print('unMatch...............................')
+                print('keywords "%s" is unMatch!' % info_kws[0])
                 string = Base64.encode('0000000011111111')
-                res_list.append('http://www.baidu.com\n%s' % string)  # 失配
+                res_list.append([info_kws[0], 'http://www.baidu.com/pos/%s' % string, os.path.split(filename)[1]])  # 失配
                 info_kws.pop(0)
             else:
-                url, string, p = self.key2loc(keywords=info_kws, filename=os.path.join(tmppath, filename))
+                url, string, p = self.key2loc(keywords=info_kws, filename=filename)
                 res_string = Base64.encode(string)  # 编码之后的结果
                 _res = url + '/pos/' + res_string  # 连接
-                res_list.append(_res)
+                res_list.append([info_kws[:p+1], _res, os.path.split(filename)[1]])
                 if p != -1:
                     info_kws = info_kws[p:]
         return res_list
@@ -120,7 +117,3 @@ if __name__ == '__main__':
     # info2 = "文 本来 隐藏 信息 提高 隐藏 容量 率 传输 效率"
     # urls, res, ps = e.key2loc(filename=filename1)
     pass
-
-
-
-

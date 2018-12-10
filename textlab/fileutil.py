@@ -84,7 +84,7 @@ class FileUtil(object):
                                     openhook=fileinput.hook_encoded(config.encoding)):
             if fileinput.filelineno() == 1:
                 fileinput.close()
-                return line
+                return line.rstrip('.\n')
 
     @staticmethod
     def readchinese(filename):
@@ -132,6 +132,8 @@ class FileUtil(object):
                 filename = os.path.join(filepath, file)
                 if os.path.isfile(filename):
                     os.remove(filename)
+                elif os.path.isdir(filename):
+                    shutil.rmtree(filename)
         else:
             print('the directory is empty...')
             pass
