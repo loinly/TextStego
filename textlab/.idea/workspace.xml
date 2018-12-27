@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45f07481-088d-4941-9c97-523deed5cc1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileutil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hide/hide1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/Search1.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/Search1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretreatment/pretreatment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretreatment/pretreatment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiderlink/SpiderLink.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiderlink/SpiderLink.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word2vec/Word2vec.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word2vec/vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/word2vec/vector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encode/position.py" beforeDir="false" afterPath="$PROJECT_DIR$/encode/position.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index/Search1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="128" column="23" lean-forward="true" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
+            <state relative-caret-position="277">
+              <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
               <folding>
                 <element signature="e#34#43#0" expanded="true" />
                 <element signature="e#3064#3103#0" />
@@ -36,10 +29,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hide/hide1.py">
+        <entry file="file://$PROJECT_DIR$/hide/hide.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="140">
+              <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
               <folding>
                 <element signature="e#34#43#0" expanded="true" />
               </folding>
@@ -47,13 +40,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hide/hide.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exp/distance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+            <state relative-caret-position="133">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
-                <element signature="e#34#43#0" expanded="true" />
+                <element signature="e#34#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,7 +165,6 @@
         <option value="$PROJECT_DIR$/index/Index.py" />
         <option value="$PROJECT_DIR$/spidercontent/spiderTo.py" />
         <option value="$PROJECT_DIR$/spidercontent/Downloader.py" />
-        <option value="$PROJECT_DIR$/encode/position.py" />
         <option value="$PROJECT_DIR$/exp/res.py" />
         <option value="$PROJECT_DIR$/word2vec/segtext.py" />
         <option value="$PROJECT_DIR$/word2vec/Word2vec.py" />
@@ -186,10 +178,11 @@
         <option value="$PROJECT_DIR$/index/Search1.py" />
         <option value="$PROJECT_DIR$/hide/hide.py" />
         <option value="$PROJECT_DIR$/hide/hide1.py" />
+        <option value="$PROJECT_DIR$/encode/position.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="1937" />
     <option name="height" value="1038" />
@@ -434,7 +427,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8606702" visible="true" weight="0.21664464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8606702" visible="true" weight="0.18295905" />
       <window_info id="Structure" order="1" sideWeight="0.40221402" side_tool="true" weight="0.16380449" />
       <window_info id="Favorites" order="2" sideWeight="0.1393298" side_tool="true" weight="0.17107001" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -452,27 +445,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/index/Search.py</url>
-          <line>93</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/index/Search.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/index/Search.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/2.txt">
@@ -624,16 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/encode/position.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spidercontent/spiderTo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -699,33 +661,12 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp/distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="e#34#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index/Search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-            <element signature="e#3967#3999#0" />
           </folding>
         </state>
       </provider>
@@ -794,17 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/Search1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="128" column="23" lean-forward="true" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-            <element signature="e#3064#3103#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hide/extract.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-722">
@@ -812,22 +742,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index/Search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <element signature="e#3967#3999#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encode/position.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <element signature="e#361#471#0" />
+            <element signature="e#543#922#0" />
+            <element signature="e#979#1908#0" />
+            <element signature="e#1948#3017#0" />
+            <element signature="e#3066#3651#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hide/hide1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="159">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exp/distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#34#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hide/hide.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state relative-caret-position="140">
+          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/Search1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <element signature="e#3064#3103#0" />
           </folding>
         </state>
       </provider>

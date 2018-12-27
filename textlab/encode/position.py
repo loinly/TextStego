@@ -41,6 +41,7 @@ class Location(object):
                 break
         return row, col, p
 
+    #  编码
     def key2loc(self, keywords, filename='.'):
         col_bits = self.col_bits
         n = pow(2, col_bits)
@@ -66,6 +67,7 @@ class Location(object):
 
         return _url, _res, p
 
+    #   位置信息描述
     def describe(self, path):
         info_kws = self.keywords[:]
         res_list = []
@@ -88,6 +90,7 @@ class Location(object):
                     info_kws = info_kws[p:]
         return res_list
 
+    #  最优网页的选取
     def optimal(self, path, info_kws):
         files = os.listdir(path)
         res = []
