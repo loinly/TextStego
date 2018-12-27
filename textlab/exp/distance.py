@@ -1,6 +1,6 @@
 #! python3
 # -*- coding:utf-8 -*-
-from gensim.models import KeyedVectors, Word2Vec
+from gensim.models import Word2Vec
 from pretreatment.pretreatment import Prepaper
 
 

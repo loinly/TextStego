@@ -4,8 +4,7 @@ import os
 import config
 from fileutil import FileUtil
 from index.Index import Index
-from word2vec.Word2vec import WordVector
-
+from word2vec.vector import WV
 '''在网页文本库中检索,并保存检索到的文本'''
 
 
@@ -42,7 +41,7 @@ class Search(object):
                 q = q + ' ' + kw
                 maxh += 1
             else:                       # 当联合搜索无法进行下去时,转为寻找相似关键词
-                simikeys = WordVector.similarwords(kw)
+                simikeys = WV.similarwords(kw)
                 t_paper = []
                 if not simikeys:
                     print(

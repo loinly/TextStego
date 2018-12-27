@@ -1,4 +1,4 @@
-#！python3
+#! python3
 # -*- coding:utf-8 -*-
 
 import os
@@ -8,6 +8,17 @@ import logging
 from gensim.models import Word2Vec
 from gensim.models.word2vec import PathLineSentences
 from pretreatment.pretreatment import Prepaper
+
+
+# 一行一句,主要考虑文件过大的情况,节省内存
+class MySentences(object):
+    def __init__(self, dirname):
+        self.dirname = dirname
+
+    def __iter__(self):
+        for fname in os.listdir(self.dirname):
+            for line in open(os.path.join(self.dirname, fname)):
+                yield line.split()
 
 
 class Seg(object):
@@ -29,7 +40,7 @@ class Seg(object):
                 fout.close()
 
 
-class Word2Vector(object):
+class WV(object):
 
     def __init__(self):
         self.logger = logging.basicConfig(
@@ -37,8 +48,9 @@ class Word2Vector(object):
             level=logging.INFO)
         pass
 
-    # 训练 corpus 下所有文件
-    def train(self, corpus, modelpath):
+    # 训练 corpus 下所有文件, 并保存到modelpath
+    @staticmethod
+    def train(corpus, modelpath):
         sentences = PathLineSentences(corpus)
         model = Word2Vec(iter=3)
         model.build_vocab(sentences)
@@ -46,18 +58,18 @@ class Word2Vector(object):
         model.save(modelpath)
 
     # 增量训练
-    def moretrain(self, models, corpus):
+    @staticmethod
+    def moretrain(models, corpus):
         sentences = PathLineSentences(corpus)
         model = Word2Vec.load(models)
         model.train(sentences, total_examples=model.corpus_count, epochs=model.iter)
-
 
     @staticmethod
     def similarwords(keyword, modelpath=config.modelpath, tops=5):
         # 默认获取前10个相似关键词
         start = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
         print(
-"start execute Word2vec, get similar keywords! Time:" +
+            "start execute Word2vec, get similar keywords! Time:" +
             start +
             ">>>>>>>>>>>>>>>>>>>>>")
         try:
@@ -80,15 +92,25 @@ class Word2Vector(object):
             ">>>>>>>>>>>>>>>>>>>>>")
         return res
 
+    # 计算 WMD 距离
+    @staticmethod
+    def wmd(model, sent1, sent2):
+        sent1 = Prepaper.seg(sent1)
+        sent2 = Prepaper.seg(sent2)
+        model = Word2Vec.load(model)
+        #  这边是归一化词向量，不加这行的话，计算的距离数据可能会非常大
+        model.init_sims(replace=True)
+        distance = model.wv.wmdistance(sent1, sent2)
+        return distance
+
 
 if __name__ == '__main__':
-    dir = r''
-    save = r''
+    dirname1 = r''
+    savename1 = r''
     # 1.分割
-    Seg.segtext(dirname=dir, savepath=save)
+    Seg.segtext(dirname=dirname1, savepath=savename1)
     # 2.训练
-    wv = Word2Vector()
-    wv.train(corpus=save, modelpath='./bin')
+    wv = WV()
+    wv.train(corpus=savename1, modelpath='./bin')
     # wv.train(r'F:\LabData\NetBigData\test\word2vec\x1.txt', './m.bin')
     # wv.moretrain('./m.bin', r'F:\LabData\NetBigData\test\word2vec\x2.txt')
-

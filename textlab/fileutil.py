@@ -146,8 +146,6 @@ class FileUtil(object):
             FileUtil.removefiles(filepath)
 
 
-
-
 if __name__ == '__main__':
     # url, text = FileUtil.geturlAndtext('./1.txt')
     # print(url)
