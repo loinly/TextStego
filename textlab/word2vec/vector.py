@@ -7,7 +7,7 @@ import warnings
 import config
 import logging
 from gensim.models import Word2Vec
-from gensim.models.word2vec import PathLineSentences
+from gensim.models.word2vec import LineSentence, PathLineSentences
 from pretreatment.pretreatment import Prepaper
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 
@@ -34,12 +34,18 @@ class MySentences(object):
 
 class Seg(object):
 
-    @staticmethod
-    def segtext(dirname, savepath):
+    def __init__(self):
+        logging.basicConfig(
+            format='%(asctime)s : %(levelname)s : %(message)s',
+            level=logging.INFO)
+        self.logger = logging.getLogger("Segment")
+
+    def segtext(self, dirname, savepath):
         for path in os.listdir(dirname):
             outfile = os.path.join(savepath, path + '.txt')
             filepath = os.path.join(dirname, path)
             if os.path.isdir(filepath):
+                self.logger.info('seg all files under "path"')
                 fout = open(outfile, 'w+', encoding='utf-8')
                 for name in os.listdir(filepath):
                     filename = os.path.join(filepath, name)
@@ -49,6 +55,7 @@ class Seg(object):
                         fout.write(sentence)
                         fout.write('\n')
                 fout.close()
+        self.logger.info(' all files are segmented!')
 
 
 '''
@@ -59,24 +66,26 @@ word2vec类
 class WV(object):
 
     def __init__(self):
-        self.logger = logging.basicConfig(
+        logging.basicConfig(
             format='%(asctime)s : %(levelname)s : %(message)s',
             level=logging.INFO)
         pass
 
-    # 训练 corpus 下所有文件, 并保存到modelpath
+    # 训练 corpus 下所有文件(每个文件事先分好词以空格隔开), 并保存到modelpath
     @staticmethod
     def train(corpus, modelpath):
+        if not os.path.isdir(corpus):
+            raise ValueError('input is should be a path')
         sentences = PathLineSentences(corpus)
         model = Word2Vec(iter=3)
         model.build_vocab(sentences)
         model.train(sentences, total_examples=model.corpus_count, epochs=model.iter)
         model.save(modelpath)
 
-    # 增量训练
+    # 增量训练,输入一个分好词的文本corpus
     @staticmethod
     def moretrain(models, corpus):
-        sentences = PathLineSentences(corpus)
+        sentences = LineSentence(corpus)
         model = Word2Vec.load(models)
         model.train(sentences, total_examples=model.corpus_count, epochs=model.iter)
 
@@ -115,14 +124,15 @@ class WV(object):
 
 
 if __name__ == '__main__':
-    dirname1 = r''
-    savename1 = r''
+    dirname1 = r'F:\LabData\NetBigData\test\word2vec'
+    savename1 = r'F:\LabData\NetBigData\test\out'
     # 1.分割
-    # Seg.segtext(dirname=dirname1, savepath=savename1)
-    # # 2.训练
-    # wv = WV()
-    # wv.train(corpus=savename1, modelpath='./bin')
+    s = Seg()
+    s.segtext(dirname=dirname1, savepath=savename1)
+    # 2.训练
+    wv = WV()
+    wv.train(corpus=savename1, modelpath='./m.bin')
     # wv.train(r'F:\LabData\NetBigData\test\word2vec\x1.txt', './m.bin')
     # wv.moretrain('./m.bin', r'F:\LabData\NetBigData\test\word2vec\x2.txt')
-    keys = "推动"
-    simikeys = WV.similarwords(keys)
+    # keys = "推动"
+    # simikeys = WV.similarwords(keys)
