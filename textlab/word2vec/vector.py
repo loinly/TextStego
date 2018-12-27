@@ -3,14 +3,20 @@
 
 import os
 import time
+import warnings
 import config
 import logging
 from gensim.models import Word2Vec
 from gensim.models.word2vec import PathLineSentences
 from pretreatment.pretreatment import Prepaper
+warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 
 
-# 一行一句,主要考虑文件过大的情况,节省内存
+'''
+一行一句,主要考虑文件过大的情况,节省内存
+'''
+
+
 class MySentences(object):
     def __init__(self, dirname):
         self.dirname = dirname
@@ -19,6 +25,11 @@ class MySentences(object):
         for fname in os.listdir(self.dirname):
             for line in open(os.path.join(self.dirname, fname)):
                 yield line.split()
+
+
+''' 
+分割路径下所有文件
+'''
 
 
 class Seg(object):
@@ -38,6 +49,11 @@ class Seg(object):
                         fout.write(sentence)
                         fout.write('\n')
                 fout.close()
+
+
+'''
+word2vec类
+'''
 
 
 class WV(object):
@@ -68,10 +84,7 @@ class WV(object):
     def similarwords(keyword, modelpath=config.modelpath, tops=5):
         # 默认获取前10个相似关键词
         start = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
-        print(
-            "start execute Word2vec, get similar keywords! Time:" +
-            start +
-            ">>>>>>>>>>>>>>>>>>>>>")
+        print("start execute Word2vec, get similar keywords! Time:" + start +">>>>>>>>>>>>>>>>>>>>>")
         try:
             model = Word2Vec.load(modelpath)
             words = model.wv.most_similar(keyword, topn=tops)
@@ -86,13 +99,10 @@ class WV(object):
         for word in words:
             res.append([word[0], word[1]])
             print(word[0], "\t", word[1])
-        print(
-            "get similar keywords end!................... Time:" +
-            end +
-            ">>>>>>>>>>>>>>>>>>>>>")
+        print("get similar keywords end!................... Time:" + end + ">>>>>>>>>>>>>>>>>>>>>")
         return res
 
-    # 计算 WMD 距离
+    #  WMD 距离
     @staticmethod
     def wmd(model, sent1, sent2):
         sent1 = Prepaper.seg(sent1)
@@ -108,9 +118,11 @@ if __name__ == '__main__':
     dirname1 = r''
     savename1 = r''
     # 1.分割
-    Seg.segtext(dirname=dirname1, savepath=savename1)
-    # 2.训练
-    wv = WV()
-    wv.train(corpus=savename1, modelpath='./bin')
+    # Seg.segtext(dirname=dirname1, savepath=savename1)
+    # # 2.训练
+    # wv = WV()
+    # wv.train(corpus=savename1, modelpath='./bin')
     # wv.train(r'F:\LabData\NetBigData\test\word2vec\x1.txt', './m.bin')
     # wv.moretrain('./m.bin', r'F:\LabData\NetBigData\test\word2vec\x2.txt')
+    keys = "推动"
+    simikeys = WV.similarwords(keys)

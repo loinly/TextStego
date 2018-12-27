@@ -88,6 +88,7 @@ class Search1(object):
                 num.append(maxh)
 
         return path, hidekey, num
+
     # def query(self, keywords, kwpath=''):
     #     path = []  # 已经找到的文章列表
     #     num = []  # 每篇含关键词的个数

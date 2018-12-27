@@ -42,7 +42,7 @@ class Prepaper(object):
         return ''.join(strs)
 
     def savetexts(self, filepath, propath):
-
+        print('init pretreatment directory.....')
         FileUtil.init_path(propath)
         try:
             file_lists = os.listdir(filepath)  # 返回当前路径下所有文件和路径,字符串类型

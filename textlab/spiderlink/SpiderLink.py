@@ -99,7 +99,6 @@ class UrlManager(object):
             FileUtil.writefile(new_url + '\n', self.filename)
 
 
-
 if __name__ == '__main__':
     # string = '隐藏 信息 网络 互联网 成功率 技术 利用 容量 传输 提高 大量 文本 效率'
     string = '隐藏 信息 网络 互联网 成功率 技术'

@@ -127,7 +127,6 @@ class FileUtil(object):
     @staticmethod
     def removefiles(filepath):
         if os.listdir(filepath):
-            print('init pretreatment directory.....')
             for file in os.listdir(filepath):
                 filename = os.path.join(filepath, file)
                 if os.path.isfile(filename):
@@ -135,7 +134,6 @@ class FileUtil(object):
                 elif os.path.isdir(filename):
                     shutil.rmtree(filename)
         else:
-            print('the directory is empty...')
             pass
 
     @staticmethod

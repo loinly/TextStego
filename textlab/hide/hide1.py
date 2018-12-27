@@ -3,9 +3,9 @@
 import os
 import config
 import jieba.analyse
+from fileutil import FileUtil
 from index.Index import Index
-from index.Search import Search
-from encode.position import Location
+from index.Search1 import Search1
 from spidercontent.spiderTo import SpiderTo
 from spiderlink.SpiderLink import SpiderLink
 from pretreatment.pretreatment import Prepaper
@@ -16,7 +16,8 @@ class Hide(object):
         self.root = root
         pass
 
-    def info(self, info='', col_bits=5, pagenum=100):
+    def info(self, fi='', pagenum=100):
+        info = FileUtil.readfile(fi)
         keywords = Prepaper.seg(info)
         # 1, 基于 TextRank 算法进行关键词提取
         keys = jieba.analyse.textrank(
@@ -39,28 +40,44 @@ class Hide(object):
         # 4.1 索引构建
         indexpath = os.path.join(config.indexpath, '_'.join(keys))
         Index.build(datapath=propath, indexpath=indexpath)
-        search = Search(keys=keys, pindexp=indexpath)
+        search = Search1(filename=fi, pindexp=indexpath)
         # 4.2 搜索并保存
         info_k = keywords[:]
-        search.retrieve(keywords=info_k)
-        # 5,选取最佳网页,位置信息描述,编码
-        info_kws = keywords[:]
-        loc = Location(keywords=info_kws, col_bits=col_bits)
-        name = '_'.join(keys)
-        res_list = loc.describe(name)
-        return res_list
+        num = search.retrieve(keywords=info_k)
+        return keywords, num
 
+    def expriment(self, path='', pagenum=100):
+        savename = os.path.join(config.hidepath, 'res.txt')
+        for dirname in os.listdir(path):   # dir: hidepath
+            filepath = os.path.join(path, dirname)
+            if os.path.isdir(filepath):
+                for f in os.listdir(filepath):
+                    fi = os.path.join(filepath, f)
+                    res = []
+                    keywords, num = self.info(fi=fi, pagenum=pagenum)
+                    unmatch = 0
+                    hidenum = 0
+                    s = '\t||'
+                    for i in num:
+                        if i == 0:
+                            unmatch += 1
+                        else:
+                            hidenum = hidenum + i
+                        s = s + '\t' + str(i)
+                    res.append(fi)
+                    res.append(str(len(keywords)))
+                    res.append(str(hidenum))
+                    res.append(str(len(num)))
+                    res.append(str(unmatch))
+                    res_str = '\t'.join(res) + s + '\n'
+                    FileUtil.write_apd_file(res_str, savename)
+                FileUtil.write_apd_file(dirname + ' End !\n', savename)
+                pass
+        pass
 
 if __name__ == '__main__':
     roots = "http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd={0}&pn={1}"
     h = Hide(root=roots)
-    # text1 ='基于网络文本的无载体信息隐藏技术利用互联网上大量的网络文本来隐藏信息，提高了隐藏容量、成功率及传输效率'
-    # text1 = '无载体信息隐藏由于能在不经任何修改的情况下将秘密信息传递给载体而成为热点。'
-    # text1 = '人在运动的过程当中，身体的结构会随着你的运动而变化，因此加强了自身的体质，所以运动是人类离不开的一种活动方式之一。' \
-    #         '但是人运动时要选择合适自己的运动，更要选择合适的时间、地点去运动。'
-    text1 = '无载体信息隐藏由于能在不经任何修改的情况下将秘密信息传递给载体而成为热点。' \
-            '摘要针对文本大数据隐藏能力低、检索效率低、匹配不匹配等问题，提出了一种利用互联网上海量web文本进行无覆盖信息隐藏的新方法。'
-    res1 = h.info(info=text1, col_bits=5, pagenum=100)
-    for items in res1:
-        print(items[0], items[1], items[2])
+    path1 = r'F:\LabData\NetBigData\test\hideinfo'
+    h.expriment(path=path1, pagenum=100)
     pass
