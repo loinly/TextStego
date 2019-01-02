@@ -3,7 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="45f07481-088d-4941-9c97-523deed5cc1c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/exp/distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/distance.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encode/location_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/encode/position.py" beforeDir="false" afterPath="$PROJECT_DIR$/encode/position.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exp/distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exp/res.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/res.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/fileutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hide/Infokws.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hide/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/hide/extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hide/hide.py" beforeDir="false" afterPath="$PROJECT_DIR$/hide/hide.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hide/hide1.py" beforeDir="false" afterPath="$PROJECT_DIR$/hide/hide1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/Search.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/Search1.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/search1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretreatment/count.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretreatment/count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretreatment/pretreatment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pretreatment/pretreatment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spidercontent/Downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/spidercontent/Downloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spidercontent/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/spidercontent/Parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spidercontent/spiderTo.py" beforeDir="false" afterPath="$PROJECT_DIR$/spidercontent/spiderTo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiderlink/DataOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiderlink/DataOutput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiderlink/HtmlManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiderlink/HtmlManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiderlink/SpiderLink.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiderlink/spiderlink.py" afterDir="false" />
+>>>>>>> hot_fix
       <change beforePath="$PROJECT_DIR$/word2vec/vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/word2vec/vector.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +44,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/exp/distance.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -25,6 +52,12 @@
               <folding>
                 <element signature="e#34#68#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/hide/extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+>>>>>>> hot_fix
             </state>
           </provider>
         </entry>
@@ -32,8 +65,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/word2vec/vector.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="273">
               <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+=======
+            <state relative-caret-position="19">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+>>>>>>> hot_fix
               <folding>
                 <element signature="e#35#44#0" expanded="true" />
                 <element signature="e#2228#3099#0" />
@@ -43,10 +81,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/models/word2vec.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
               <caret line="1474" column="53" lean-forward="true" selection-start-line="1474" selection-start-column="53" selection-end-line="1474" selection-end-column="53" />
+=======
+        <entry file="file://$PROJECT_DIR$/hide/hide1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+              <folding>
+                <element signature="e#34#43#0" expanded="true" />
+              </folding>
+>>>>>>> hot_fix
             </state>
           </provider>
         </entry>
@@ -127,8 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/com/spider/spidercontent/Parser.py" />
-        <option value="$PROJECT_DIR$/com/fileutils/fileutil.py" />
         <option value="$PROJECT_DIR$/com/config/config.py" />
         <option value="$PROJECT_DIR$/com/spider/spidercontent/spiderTo.py" />
         <option value="$PROJECT_DIR$/com/spider/link/SpiderMan.py" />
@@ -153,38 +199,49 @@
         <option value="$PROJECT_DIR$/spiderlink/HtmlDownloader.py" />
         <option value="$PROJECT_DIR$/spiderlink/Htmlparse.py" />
         <option value="$PROJECT_DIR$/spidercontent/URLMgc.py" />
-        <option value="$PROJECT_DIR$/spiderlink/DataOutput.py" />
-        <option value="$PROJECT_DIR$/spiderlink/HtmlManager.py" />
         <option value="$PROJECT_DIR$/encode/coding.py" />
-        <option value="$PROJECT_DIR$/spidercontent/Parser.py" />
-        <option value="$PROJECT_DIR$/hide/extract.py" />
-        <option value="$PROJECT_DIR$/pretreatment/count.py" />
         <option value="$PROJECT_DIR$/image/Image.py" />
-        <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/index/Index.py" />
-        <option value="$PROJECT_DIR$/spidercontent/spiderTo.py" />
-        <option value="$PROJECT_DIR$/spidercontent/Downloader.py" />
-        <option value="$PROJECT_DIR$/exp/res.py" />
         <option value="$PROJECT_DIR$/word2vec/segtext.py" />
         <option value="$PROJECT_DIR$/word2vec/Word2vec.py" />
         <option value="$PROJECT_DIR$/word2vec/test.py" />
-        <option value="$PROJECT_DIR$/index/Search.py" />
-        <option value="$PROJECT_DIR$/pretreatment/pretreatment.py" />
-        <option value="$PROJECT_DIR$/fileutil.py" />
         <option value="$PROJECT_DIR$/spiderlink/SpiderLink.py" />
+        <option value="$PROJECT_DIR$/hide/extract.py" />
+        <option value="$PROJECT_DIR$/exp/res.py" />
+        <option value="$PROJECT_DIR$/pretreatment/count.py" />
+        <option value="$PROJECT_DIR$/spiderlink/spiderlink.py" />
+        <option value="$PROJECT_DIR$/spidercontent/test.txt" />
+        <option value="$PROJECT_DIR$/spidercontent/Parser.py" />
+        <option value="$PROJECT_DIR$/spidercontent/Downloader.py" />
+        <option value="$PROJECT_DIR$/spiderlink/DataOutput.py" />
+        <option value="$PROJECT_DIR$/spiderlink/HtmlManager.py" />
+        <option value="$PROJECT_DIR$/index/Index.py" />
+        <option value="$PROJECT_DIR$/index/Search.py" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/word2vec/vector.py" />
         <option value="$PROJECT_DIR$/index/Search1.py" />
+>>>>>>> hot_fix
+        <option value="$PROJECT_DIR$/pretreatment/pretreatment.py" />
+        <option value="$PROJECT_DIR$/spidercontent/spiderTo.py" />
+        <option value="$PROJECT_DIR$/fileutil.py" />
         <option value="$PROJECT_DIR$/hide/hide.py" />
-        <option value="$PROJECT_DIR$/hide/hide1.py" />
+        <option value="$PROJECT_DIR$/exp/distance.py" />
+        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/encode/position.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/exp/distance.py" />
         <option value="$PROJECT_DIR$/word2vec/vector.py" />
+=======
+        <option value="$PROJECT_DIR$/hide/hide1.py" />
+>>>>>>> hot_fix
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="width" value="1937" />
-    <option name="height" value="1038" />
+    <option name="x" value="231" />
+    <option name="y" value="7" />
+    <option name="width" value="1365" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -192,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,17 +259,17 @@
             <path>
               <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
               <item name="textlab" type="462c0819:PsiDirectoryNode" />
+              <item name="encode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="textlab" type="462c0819:PsiDirectoryNode" />
               <item name="exp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
               <item name="textlab" type="462c0819:PsiDirectoryNode" />
               <item name="hide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="textlab" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="textlab" type="b2602c69:ProjectViewProjectNode" />
@@ -229,28 +285,29 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/textlab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Python/Study" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2507433" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/word2vec/segtext.py" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Home\repository\Info\textlab" />
+      <recent name="F:\Home\repository\Info\textlab\spidercontent" />
+      <recent name="F:\Home\repository\Info\textlab\hide" />
+      <recent name="F:\Home\Python\NetBigData\textlab\1" />
+      <recent name="F:\Home\Python\NetBigData\textlab\spidercontent" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Home\Python\NetBigData\textlab\encode" />
       <recent name="F:\Home\Python\NetBigData\textlab" />
       <recent name="F:\Home\Python\NetBigData\textlab\com" />
       <recent name="F:\Home\Python\NetBigData\textlab\Data" />
       <recent name="F:\Home\Python\NetBigData\textlab\com\encode\testfiles" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Home\repository\Info\textlab\hide" />
-      <recent name="F:\Home\Python\NetBigData\textlab\1" />
-      <recent name="F:\Home\Python\NetBigData\textlab\spidercontent" />
-      <recent name="F:\Home\Python\NetBigData\textlab\com\spider" />
-      <recent name="F:\Home\Python\NetBigData\textlab\com\spider\testfiles\3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,7 +322,33 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.vector">
+    <configuration name="Search" type="PythonConfigurationType" factoryName="Python">
+=======
+  <component name="RunManager" selected="Python.position">
+    <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> hot_fix
+      <module name="textlab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/index" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:\Home\repository\Info\textlab\index\index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Search" type="PythonConfigurationType" factoryName="Python">
       <module name="textlab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,7 +361,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/index/Search.py" />
+      <option name="SCRIPT_NAME" value="F:\Home\repository\Info\textlab\index\search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,7 +370,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="fileutil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="textlab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,11 +378,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp/distance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileutil.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,7 +391,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hide1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hide" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="textlab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,7 +403,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hide/hide1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hide/hide.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -341,7 +424,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\Home\repository\Info\textlab\hide\hidex.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hide/hide1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -350,7 +433,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="position" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="textlab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -358,32 +441,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word2vec" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/encode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\Home\repository\Info\textlab\word2vec\vector.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="vector" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="textlab" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word2vec" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word2vec/vector.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/encode/position.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -394,19 +456,27 @@
     </configuration>
     <list>
       <item itemvalue="Python.Search" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.vector" />
-      <item itemvalue="Python.distance" />
+      <item itemvalue="Python.fileutil" />
+      <item itemvalue="Python.Index" />
       <item itemvalue="Python.hide1" />
-      <item itemvalue="Python.hide1 (1)" />
+      <item itemvalue="Python.hide" />
+      <item itemvalue="Python.position" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.vector" />
         <item itemvalue="Python.hide1 (1)" />
         <item itemvalue="Python.hide1" />
         <item itemvalue="Python.distance" />
         <item itemvalue="Python.test" />
+=======
+        <item itemvalue="Python.position" />
+        <item itemvalue="Python.hide1" />
+        <item itemvalue="Python.hide" />
+        <item itemvalue="Python.Index" />
+        <item itemvalue="Python.fileutil" />
+>>>>>>> hot_fix
       </list>
     </recent_temporary>
   </component>
@@ -436,17 +506,22 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8606702" visible="true" weight="0.18295905" />
       <window_info id="Structure" order="1" sideWeight="0.40221402" side_tool="true" weight="0.16380449" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.825779" visible="true" weight="0.18494056" />
+      <window_info id="Structure" order="1" sideWeight="0.17422096" side_tool="true" visible="true" weight="0.18494056" />
+>>>>>>> hot_fix
       <window_info id="Favorites" order="2" sideWeight="0.1393298" side_tool="true" weight="0.17107001" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.562323" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" weight="0.21954674" />
-      <window_info anchor="bottom" x="47" y="128" width="1514" height="637" id="Debug" order="3" weight="0.37818697" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49933332" weight="0.6175637" />
+      <window_info anchor="bottom" x="47" y="128" width="1514" height="637" id="Debug" order="3" weight="0.4688385" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.41018388" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.34985834" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.21388102" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006667" side_tool="true" weight="0.9585122" />
       <window_info anchor="bottom" id="Version Control" order="10" />
@@ -455,66 +530,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hide/hide.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/models/base_any2vec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="1390" column="8" selection-start-line="1390" selection-start-column="8" selection-end-line="1390" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/models/keyedvectors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="451" selection-start-line="451" selection-end-line="451" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="1688" selection-start-line="1688" selection-end-line="1688" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spiderlink/HtmlDownloader.py" />
-    <entry file="file://$PROJECT_DIR$/spiderlink/Htmlparse.py" />
-    <entry file="file://$PROJECT_DIR$/spiderlink/UrLManager.py" />
-    <entry file="file://$PROJECT_DIR$/spidercontent/URLMgc.py" />
-    <entry file="file://$PROJECT_DIR$/pretreatment/jiebaseg.py" />
-    <entry file="file://$PROJECT_DIR$/spidercontent/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1/2.txt" />
-    <entry file="file://$PROJECT_DIR$/1/1.txt" />
-    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/searching.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="731" column="8" selection-start-line="731" selection-start-column="8" selection-end-line="731" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="2624" column="4" selection-start-line="2624" selection-start-column="4" selection-end-line="2624" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image/Image.py" />
-    <entry file="file://$USER_HOME$/Desktop/data.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/encode/location_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#11#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -523,31 +553,15 @@
       </provider>
     </entry>
     <entry file="file://F:/Installations/Python/Python37/Lib/shutil.py">
+>>>>>>> hot_fix
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-957408531/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="4212" column="58" selection-start-line="4212" selection-start-column="58" selection-end-line="4212" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/LabData/NetBigData/prepaper/信息_载体_秘密_传递_情况_成为_热点_修改_隐藏/09_04_834_基于图像多特征的无载体信息隐藏算法研究与实现-手机知网.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spidercontent/Parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://F:/Installations/Python/Python37/Lib/fileinput.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -556,20 +570,300 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spidercontent/Downloader.py">
+    <entry file="file://$PROJECT_DIR$/word2vec/segtext.py" />
+    <entry file="file://$PROJECT_DIR$/word2vec/Word2vec.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hide/hidex.py" />
+    <entry file="file://$PROJECT_DIR$/word2vec/m.bin" />
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/gensim/models/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+        <state relative-caret-position="225">
+          <caret line="1470" lean-forward="true" selection-start-line="1470" selection-end-line="1470" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encode/location_info.py" />
+    <entry file="file://F:/Installations/Python/Python37/Lib/zipfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="1206" column="20" selection-start-line="1206" selection-start-column="20" selection-end-line="1206" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/openpyxl/worksheet/worksheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="430" column="22" lean-forward="true" selection-start-line="430" selection-start-column="22" selection-end-line="430" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/openpyxl/utils/cell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="184" column="49" lean-forward="true" selection-start-line="184" selection-start-column="49" selection-end-line="184" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.txt" />
+    <entry file="file://$PROJECT_DIR$/2.txt" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-957408531/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96520">
+          <caret line="5080" column="8" selection-start-line="5080" selection-start-column="8" selection-end-line="5080" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/fake_useragent/fake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2679">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="1667" selection-start-line="1667" selection-end-line="1671" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="1499" column="13" selection-start-line="1499" selection-start-column="13" selection-end-line="1499" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Installations/Python/Python37/Lib/test/test_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="2872" column="31" lean-forward="true" selection-start-line="2872" selection-start-column="31" selection-end-line="2872" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/spidercontent/信息_载体_秘密_传递_情况_成为_热点_修改_隐藏.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2+19_00_439_音频信息隐藏技术研究 - Augusdi的专栏 - CSDN博客.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> hot_fix
+    <entry file="file://$PROJECT_DIR$/spiderlink/DataOutput.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spiderlink/DataOutput.py">
+    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="575">
+          <caret line="623" lean-forward="true" selection-start-line="623" selection-end-line="623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretreatment/pretreatment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/spiderTo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiderlink/HtmlManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding>
+            <element signature="e#36#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/word2vec/segtext.py" />
+    <entry file="file://$PROJECT_DIR$/word2vec/Word2vec.py">
+=======
+    <entry file="file://$PROJECT_DIR$/spiderlink/spiderlink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec/vector.py">
+>>>>>>> hot_fix
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spidercontent/Downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#35#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <element signature="e#3984#4016#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/pretreatment/pretreatment.py">
+=======
+    <entry file="file://$PROJECT_DIR$/index/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#36#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/search1.py">
+>>>>>>> hot_fix
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hide/Infokws.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp/distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#34#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/hide/hidex.py">
+=======
+    <entry file="file://$PROJECT_DIR$/pretreatment/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+            <marker date="1546350394669" expanded="true" signature="110:115" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp/res.py">
+>>>>>>> hot_fix
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#60#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="1082" selection-start-line="1082" selection-end-line="1082" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
           </folding>
@@ -578,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/encode/coding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
+        <state relative-caret-position="285">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="e#160#993#0" />
@@ -588,161 +882,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spidercontent/spiderTo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" selection-start-line="12" selection-end-line="13" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretreatment/count.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding>
-            <marker date="1544078285523" expanded="true" signature="110:115" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index/Index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#36#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Installations/Python/Python37/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="1505" lean-forward="true" selection-start-line="1505" selection-end-line="1505" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec/segtext.py" />
-    <entry file="file://$PROJECT_DIR$/word2vec/Word2vec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp/res.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#60#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hide/Infokws.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretreatment/pretreatment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Installations/Python/Python37/Lib/site-packages/whoosh/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="618" selection-start-line="618" selection-end-line="618" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2401">
-          <caret line="148" selection-start-line="148" selection-end-line="149" selection-end-column="17" />
-          <folding>
-            <element signature="e#35#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hide/hidex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hide/extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-722">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index/Search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-            <element signature="e#3967#3999#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/encode/position.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#34#43#0" expanded="true" />
-            <element signature="e#361#471#0" />
-            <element signature="e#543#922#0" />
-            <element signature="e#979#1908#0" />
-            <element signature="e#1948#3017#0" />
-            <element signature="e#3066#3651#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hide/hide1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state relative-caret-position="38">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#34#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/hide/hide.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -771,11 +921,18 @@
           <folding>
             <element signature="e#34#68#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/hide/extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+>>>>>>> hot_fix
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/word2vec/m.bin">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-342" />
       </provider>
     </entry>
@@ -783,18 +940,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+=======
+        <state relative-caret-position="19">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+>>>>>>> hot_fix
           <folding>
             <element signature="e#34#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/spiderlink/HtmlManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
             <element signature="e#36#50#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/hide/hide1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
+          <folding>
+            <element signature="e#34#43#0" expanded="true" />
+>>>>>>> hot_fix
           </folding>
         </state>
       </provider>

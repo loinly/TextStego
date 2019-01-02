@@ -15,15 +15,12 @@ from fake_useragent import UserAgent
 class Downloader(object):
 
     def __init__(self, filename):
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        self.logger = logging.getLogger("Downloader")
+        logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        self.logger = logging.getLogger("Download web pages")
         self.urls = set()
-        self.manager = UrlManager(filename)
+        self.manager = FailedUrlManager(filename)
         self.filename = os.path.join(config.spiderlink, filename)  # 要抓取的文件名
-        self.savepath = os.path.join(
-            config.spiderhtml, filename.rstrip('.html'))
+        self.savepath = os.path.join(config.spiderhtml, filename.rstrip('.html'))
         self.init_config()
 
     def init_config(self):
@@ -35,30 +32,28 @@ class Downloader(object):
             url = item.get('url')
             title = item.get('title')
             try:
-                self.logger.info(
-                    'the are %s links,fetching %dth link' %
-                    (len(url_title_list), i + 1))
-                self._downloader(url, title)
+                self.logger.info('there are %s links, fetching %dth link' % (len(url_title_list), i + 1))
+                self._download(url, title)
             except Exception as e:
-                print('download failed: %s' % (str(e)))
-                self.logger.info("the failed link:{0}".format(url))
-                self.manager.save_content(url, title)
+                self.logger.info("download failed: {0}, the failed link:{1}".format(str(e), url))
+                self.manager.save_failed_content(url, title)
                 time.sleep(random.randint(10, 20))  # 暂停10~20s
         self._failed(self.manager.file_name)
 
     def _failed(self, filename):
+        """
+        fetch failed link
+        :param filename:
+        :return:
+        """
         content = FileUtil.readfilelist(filename)
         for i, item in enumerate(content):
             url, title = item.split('\t')
             try:
-                self._downloader(url, title)
-                self.logger.info(
-                    "the spider system has crawl %s failed links" % str(
-                        i + 1))
+                self._download(url, title)
+                self.logger.info("the spider system has crawl %s failed links" % str(i + 1))
             except Exception as e:
-                self.logger.info(
-                    'crawl the failed contents still failed: %s' %
-                    str(e))
+                self.logger.info('fetch the failed contents still failed: %s' % str(e))
 
     def get_url_titles(self):
         parse_list = []
@@ -70,7 +65,13 @@ class Downloader(object):
             parse_list.append(dict([('url', url), ('title', title)]))
         return parse_list
 
-    def _downloader(self, url, title):
+    def _download(self, url, title):
+        """
+        download web page, get real link
+        :param url: 网页搜索url
+        :param title: 网页title
+        :return: 真实url
+        """
         ua = UserAgent()
         user_agent = ua.random
         accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
@@ -81,7 +82,7 @@ class Downloader(object):
             if r.url not in self.urls:
                 self._write(r.url, title, r)
                 self.urls.add(r.url)
-        self.logger.info("Fetching html :{0}".format(r.url))
+        self.logger.info("Fetch html content:{0}".format(r.url))
         return r.url
 
     def _write(self, url, title, r):
@@ -90,42 +91,29 @@ class Downloader(object):
         time_head = time.strftime("%M_%S", time.localtime())
         time_slot = "%s_%03d" % (time_head, secs)
         files = self.savepath + "\\%s_%s.html" % (time_slot, title)
-        with open(files, 'a+', encoding=config.encoding) as f:
+        with open(files, 'a+', encoding='utf-8') as f:
             f.write(url)
             f.write("\n")
             f.write(r.text)
             f.close()
 
 
-class UrlManager(object):
+class FailedUrlManager(object):
     def __init__(self, filename):
         name = filename.rstrip('.html') + '.txt'
         self.file_name = os.path.join(config.failedtextpath, name)
-        self.init_file()
+        self._init()
 
-    def init_file(self):
-        if os.path.exists(self.file_name):
-            FileUtil.clear(self.file_name)
-        else:
-            with open(self.file_name, 'w+', encoding=config.encoding):
-                pass
+    def _init(self):
+        with open(self.file_name, 'w+', encoding='utf-8'):
             pass
 
-    def save_content(self, new_url, new_title):
+    def save_failed_content(self, new_url, new_title):
         content = new_url + '\t' + new_title + '\n'
         FileUtil.write_apd_file(content, self.file_name)
 
 
 if __name__ == '__main__':
-
-    filenames = r'隐藏_信息_网络_互联网_成功率_技术_利用.html'
-    # filename = os.path.join(config.SPIDERLINK, filename)
+    filenames = r'信息_载体_秘密_传递_情况_成为_热点_修改_隐藏.html'
     down = Downloader(filenames)
     down.download()
-
-    # url_title = download.get_url_titles()
-    # for item in url_title:
-    #     print(item.get('url'), item.get('title'))
-    # print(page_url)
-    # print(p_title)
-    # print(content)

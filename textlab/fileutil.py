@@ -7,28 +7,26 @@ import math
 import shutil
 import config
 import fileinput
-'''
-文件处理类读取,写入,复制   
-'''
 
 
 class FileUtil(object):
+    """
+    文件处理类: 读取,写入,添加,清空
+    """
 
     @staticmethod
     def readfile(filename):
         text = ''
-        for line in fileinput.input(
-            filename, openhook=fileinput.hook_encoded(
-                config.encoding)):
-            text += line
-        fileinput.close()
+        with open(filename, 'r', encoding='utf-8') as fin:
+            for line in fin.readlines():
+                text += line
         return text
 
     @staticmethod
     def writefile(string, filename):
         try:
-            with open(filename, 'w+', encoding=config.encoding) as f:
-                f.write(string)
+            with open(filename, 'w+', encoding=config.encoding) as fin:
+                fin.write(string)
         except IOError as e:
             print(e)
 
@@ -43,26 +41,23 @@ class FileUtil(object):
     @staticmethod
     def readkws(filename):
         res = []
-        for line in fileinput.input(filename,
-                                    openhook=fileinput.hook_encoded(config.encoding)):
-            if fileinput.filelineno() == 1:
-                continue
-            kws = line.strip('\n').split('\t')
-            res.extend(kws)
-        fileinput.close()
+        with open(filename, 'r', encoding='utf-8') as fin:
+            fin.readline()
+            for line in fin.readlines():
+                kws = line.strip('\n').split('\t')
+                res.extend(kws)
         return res
 
     @staticmethod
     def readupkws(filename):
         res = []
-        for line in fileinput.input(filename, openhook=fileinput.hook_encoded(config.encoding)):
-            if fileinput.filelineno() == 1:
-                continue
-            kws = line.strip('\n').split('\t')
-            for kw in kws:
-                if kw not in res:
-                    res.append(kw)
-        fileinput.close()
+        with open(filename, 'r', encoding='utf-8') as fin:
+            fin.readline()
+            for line in fin.readlines():
+                kws = line.strip('\n').split('\t')
+                for kw in kws:
+                    if kw not in res:
+                        res.append(kw)
         return res
 
     @staticmethod
@@ -80,18 +75,15 @@ class FileUtil(object):
 
     @staticmethod
     def readurl(filename):
-        for line in fileinput.input(filename,
-                                    openhook=fileinput.hook_encoded(config.encoding)):
-            if fileinput.filelineno() == 1:
-                fileinput.close()
-                return line.rstrip('.\n')
+        with open(filename, 'r', encoding='utf-8') as f:
+            url = f.readline()
+        return url
 
     @staticmethod
     def readchinese(filename):
         chinese_text = ''
         pattern = re.compile('[\u4e00-\u9fa5]+')
-        for line in fileinput.input(filename,
-                                    openhook=fileinput.hook_encoded(config.encoding)):
+        for line in fileinput.input(filename, openhook=fileinput.hook_encoded(config.encoding)):
             if line:
                 _line = re.findall(pattern, line)
                 chinese_text += (''.join(_line))
@@ -100,7 +92,6 @@ class FileUtil(object):
 
     @classmethod
     def get_url_text(cls, filename):
-
         url = cls.readurl(filename)
         chinese_text = cls.readchinese(filename)
         return url, chinese_text
@@ -108,9 +99,7 @@ class FileUtil(object):
     @staticmethod
     def readfilelist(filename):
         text = []
-        for line in fileinput.input(
-            filename, openhook=fileinput.hook_encoded(
-                config.encoding)):
+        for line in fileinput.input(filename, openhook=fileinput.hook_encoded(config.encoding)):
             text.append(line.rstrip('\n'))
         fileinput.close()
         return text
@@ -126,27 +115,27 @@ class FileUtil(object):
 
     @staticmethod
     def removefiles(filepath):
-        if os.listdir(filepath):
-            for file in os.listdir(filepath):
-                filename = os.path.join(filepath, file)
-                if os.path.isfile(filename):
-                    os.remove(filename)
-                elif os.path.isdir(filename):
-                    shutil.rmtree(filename)
-        else:
-            pass
+        if not os.listdir(filepath):
+            return
+        for file in os.listdir(filepath):
+            filename = os.path.join(filepath, file)
+            if os.path.isfile(filename):
+                os.remove(filename)
+            elif os.path.isdir(filename):
+                shutil.rmtree(filename)
 
     @staticmethod
     def init_path(filepath):
         if not os.path.exists(filepath):
             os.makedirs(filepath)
-        else:
+        elif os.path.isdir(filepath):
             FileUtil.removefiles(filepath)
+        elif os.path.isfile(filepath):
+            FileUtil.clear(filename=filepath)
 
 
 if __name__ == '__main__':
     # url, text = FileUtil.geturlAndtext('./1.txt')
     # print(url)
     # print(text)
-
     pass

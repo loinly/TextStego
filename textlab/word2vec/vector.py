@@ -8,7 +8,7 @@ import config
 import logging
 from gensim.models import Word2Vec
 from gensim.models.word2vec import LineSentence, PathLineSentences
-from pretreatment.pretreatment import Prepaper
+from pretreatment.pretreatment import PreDeal
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 
 
@@ -50,7 +50,7 @@ class Seg(object):
                 for name in os.listdir(filepath):
                     filename = os.path.join(filepath, name)
                     for line in open(filename, 'r', encoding='utf-8'):
-                        _line = Prepaper.seg(line)
+                        _line = PreDeal.seg(line)
                         sentence = ' '.join(_line)
                         fout.write(sentence)
                         fout.write('\n')
@@ -58,12 +58,10 @@ class Seg(object):
         self.logger.info(' all files are segmented!')
 
 
-'''
-word2vec类
-'''
-
-
 class WV(object):
+    """
+    word2vec类
+    """
 
     def __init__(self):
         logging.basicConfig(
@@ -114,9 +112,9 @@ class WV(object):
     #  WMD 距离
     @staticmethod
     def wmd(model, sent1, sent2):
-        sent1 = Prepaper.seg(sent1)
-        sent2 = Prepaper.seg(sent2)
-        model = Word2Vec.load(model)
+        sent1 = PreDeal.seg(sent1)
+        sent2 = PreDeal.seg(sent2)
+        # model = Word2Vec.load(model)
         #  这边是归一化词向量，不加这行的话，计算的距离数据可能会非常大
         model.init_sims(replace=True)
         distance = model.wv.wmdistance(sent1, sent2)
