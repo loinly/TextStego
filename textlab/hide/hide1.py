@@ -4,11 +4,11 @@ import os
 import config
 import jieba.analyse
 from fileutil import FileUtil
-from index.Index import Index
-from index.Search1 import Search1
+from index.index import Index
+from index.search1 import Search1
 from spidercontent.spiderTo import SpiderTo
-from spiderlink.SpiderLink import SpiderLink
-from pretreatment.pretreatment import Prepaper
+from spiderlink.spiderlink import SpiderLink
+from pretreatment.pretreatment import PreDeal
 
 
 class Hide(object):
@@ -18,12 +18,12 @@ class Hide(object):
 
     def info(self, fi='', pagenum=100):
         info = FileUtil.readfile(fi)
-        keywords = Prepaper.seg(info)
-        # 1, 基于 TextRank 算法进行关键词提取
+        keywords = PreDeal.seg(info)
+        # 1. 关键词提取
         keys = jieba.analyse.textrank(
             info, topK=10, withWeight=False, allowPOS=(
                 'ns', 'n', 'vn', 'v'))
-        # 2, 调用搜索引擎爬取相关网页
+        # 2. 调用搜索引擎爬取相关网页
         # 2.1 抓取链接
         spider_link = SpiderLink(keys, self.root)
         spider_link.crawl(pagenum)
@@ -31,15 +31,16 @@ class Hide(object):
         filename = '_'.join(keys) + '.html'
         spider_to = SpiderTo(filename)
         spider_to.crawl()
-        # 3, 文本预处理,去重,去停用词,分词,保留url和关键词集合
-        p = Prepaper()
+        # 3. 文本预处理,去重,去停用词,分词,保留url和关键词集合
+        p = PreDeal()
         filepath = os.path.join(config.spidertext, '_'.join(keys))
-        propath = os.path.join(config.prepapath, '_'.join(keys))
-        p.savetexts(filepath=filepath, propath=propath)
-        # 4,构建索引, 并检索,得到包含关键词信息的网页
+        prepath = os.path.join(config.prepapath, '_'.join(keys))
+        p.savetexts(filepath=filepath, prepath=prepath)
+        # 4. 构建索引, 并检索,得到包含关键词信息的网页
         # 4.1 索引构建
         indexpath = os.path.join(config.indexpath, '_'.join(keys))
-        Index.build(datapath=propath, indexpath=indexpath)
+        idx = Index()
+        idx.build(datapath=prepath, indexpath=indexpath)
         search = Search1(filename=fi, pindexp=indexpath)
         # 4.2 搜索并保存
         info_k = keywords[:]
@@ -48,7 +49,7 @@ class Hide(object):
 
     def expriment(self, path='', pagenum=100):
         savename = os.path.join(config.hidepath, 'res.txt')
-        for dirname in os.listdir(path):   # dir: hidepath
+        for dirname in os.listdir(path):
             filepath = os.path.join(path, dirname)
             if os.path.isdir(filepath):
                 for f in os.listdir(filepath):
@@ -72,8 +73,9 @@ class Hide(object):
                     res_str = '\t'.join(res) + s + '\n'
                     FileUtil.write_apd_file(res_str, savename)
                 FileUtil.write_apd_file(dirname + ' End !\n', savename)
-                pass
+            pass
         pass
+
 
 if __name__ == '__main__':
     roots = "http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd={0}&pn={1}"

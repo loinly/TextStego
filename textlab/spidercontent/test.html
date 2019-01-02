@@ -1,0 +1,2636 @@
+https://bbs.csdn.net/topics/190044439
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="referrer" content="always">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+  <link href="//csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON" />
+  
+  
+  <script src="//csdnimg.cn/public/common/libs/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="//csdnimg.cn/public/common/libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="//csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+  <link rel="stylesheet" href="https://csdnimg.cn/release/bbs/dist/css/application-dc860a2a10.css">
+  <link rel="stylesheet" href="https://csdnimg.cn/release/bbs/dist/css/bbs_new-596906f2c3.css">
+  <script>
+      var CFG = {
+          BASE_URL: "https://csdnimg.cn/release/bbs/dist/",    //当前页面对应的虚拟路径,静态资源对应目录同<base href="">
+          LOCAL_URL:"https://bbs.csdn.net/",
+          API_URL: "https://bbs.csdn.net/",                 //当前项目默认的后端API地址
+          ROOT_URL: "https://bbs.csdn.net/",          //当前项目根路径, JS跳转
+          STATIC_URL: "https://csdnimg.cn/release/bbs/dist/",          //本项目静态资源根目录
+          STATIC_GLOBAL_URL: "https://csdnimg.cn/",    //公共静态资源根目录
+          TOPIC_ID:""
+      }
+  </script>
+  <title>封装与信息隐藏的区别-CSDN论坛</title>
+  
+  <script>
+      (function(config) {
+          window.AnalysysAgent = window.AnalysysAgent || []
+          window.AnalysysAgent.methods = 'identify alias reset track profileSet profileSetOnce profileIncrement profileAppend profileUnset profileDelete registerSuperProperty registerSuperProperties unRegisterSuperProperty clearSuperProperties getSuperProperty getSuperProperties pageView debugMode auto appkey name uploadURL hash visitorConfigURL autoProfile autoWebstay'.split(' ');
+
+          function factory(b) {
+              return function() {
+                  var a = Array.prototype.slice.call(arguments);
+                  a.unshift(b);
+                  window.AnalysysAgent.push(a);
+                  return window.AnalysysAgent;
+              }
+          };
+          for (var i = 0; i < AnalysysAgent.methods.length; i++) {
+              var key = window.AnalysysAgent.methods[i];
+              AnalysysAgent[key] = factory(key);
+          }
+          for (var key in config) {
+              AnalysysAgent[key](config[key])
+          }
+          var date = new Date();
+          var time = new String(date.getFullYear()) + new String(date.getMonth() + 1) + new String(date.getDate());
+
+          var d = document,
+              c = d.createElement('script'),
+              n = d.getElementsByTagName('script')[0];
+          c.type = 'text/javascript';
+          c.async = true;
+          c.id = 'devSDK';
+          c.src = 'https://csdnimg.cn/release/bbs/AnalysysAgent_JS_SDK.min.js?time1='+ time
+          n.parentNode.insertBefore(c, n);
+      })({
+          appkey: 'csdnbbsstatistics',
+          uploadURL: 'https://report.csdn.net:4089/',
+          debugMode: 2
+
+      })
+  </script>
+</head>
+<body>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/libs/libs-f6ec322dc4.js"></script>
+    <!-- 请置于所有广告位代码之前 -->
+  <script src="//dup.baidustatic.com/js/ds.js"></script>
+  <script type="text/javascript">
+    // AnonymousUserLimit currentUserName 前提
+    var currentUserName = "";
+  </script>
+  <script src="//csdnimg.cn/release/bbs/assets/AnonymousUserLimit-7492f7f92beda533e40a50819e77fd1a.js" type="text/javascript"></script>
+  <style>
+    #topic-detail-ad-ul{width:960px;float:left;font-size:1px;margin:0;padding:0}
+    #topic-detail-ad-l{float:left;}
+    #topic-detail-ad-r{float:right;}
+    #topic-detail-ad-ul li{list-style: none;}
+  </style>
+  <script type="text/javascript" src="https://static.mediav.com/js/mvf_news_feed.js"></script>
+  <script type="text/javascript" src="//csdnimg.cn/public/common/gotop/js/goTop-v1.0.min.js"></script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/syntaxhighlighter/syntaxhighlighter-fe278769e6.js"></script>
+  <script>
+      CFG.TOPIC_ID = 190044439;
+  </script>
+
+  
+<div class="news-nav">
+  <div class="container">
+    <div class="nav-bar">
+      <a href="/home" class="">论坛首页</a>
+      <span class="dropdown">
+        <a href="javascript:void(0);">精选版块</a>
+        <span class="caret"></span>
+            <div style="background: #eaebec;" class="dropdown-menu">
+              <dl>
+                <dt><a href="/forums/Mobile">移动开发</a></dt>
+                <dd><a href="/forums/ios">iOS</a><a href="/forums/Android">Android</a><a href="/forums/Qt">Qt</a><a href="/forums/WindowsMobile">WP</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="/forums/CloudComputing">云计算</a></dt>
+                <dd><a href="/forums/AWS">IaaS</a><a href="/forums/CloudFoundry">Pass/SaaS</a><a href="/forums/hadoop">分布式计算/Hadoop</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="/forums/Java">Java技术</a></dt>
+                <dd><a href="/forums/J2SE">Java SE</a><a href="/forums/Java_WebDevelop">Java Web 开发</a><a href="/forums/J2EE">Java EE</a><a href="/forums/JavaOther">Java其他相关</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="/forums/DotNET">.NET技术</a></dt>
+                <dd><a href="/forums/DotNETFramework">.NET Framework</a><a href="/forums/CSharp">C#</a><a href="/forums/DotNETAnalysisAndDesign">.NET分析与设计</a><a href="/forums/ASPDotNET">ASP .NET</a><a href="/forums/VBDotNET">VB .NET</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="/forums/WebDevelop">Web开发</a></dt>
+                <dd><a href="/forums/PHP">PHP</a><a href="/forums/JavaScript">JavaScript</a><a href="/forums/ASP">ASP</a><a href="/forums/HTMLCSS">HTML(CSS)</a><a href="/forums/HTML5">HTML5</a><a href="/forums/Apache">Apache</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">开发语言/框架</a></dt>
+                <dd><a href="/forums/Delphi">Delphi</a><a href="/forums/VC">VC/MFC</a><a href="/forums/VB">VB</a><a href="/forums/Cpp">C/C++</a><a href="/forums/BCB">C++ Builder</a><a href="/forums/OtherLanguage">其他开发语言</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">数据库开发</a></dt>
+                <dd><a href="/forums/MSSQL">MS-SQL Server</a><a href="/forums/Oracle">Oracle</a><a href="/forums/PowerBuilder">PowerBuilder</a><a href="/forums/Informatica">Informatica</a><a href="/forums/OtherDatabase">其他数据库开发</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="/forums/Embedded">硬件/嵌入式开发</a></dt>
+                <dd><a href="/forums/WinCE">嵌入开发(WinCE)</a><a href="/forums/Embedded_driver">驱动开发/核心开发</a><a href="/forums/Embedded_hardware">硬件设计</a><a href="/forums/Embedded_SCM">单片机/工控</a><a href="/forums/ASM">汇编语言</a><a href="/forums/VxWorks">VxWorks开发</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="/forums/Linux">Linux/Unix社区</a></dt>
+                <dd><a href="/forums/Linux_System">系统维护与使用区</a><a href="/forums/Linux_Development">应用程序开发区</a><a href="/forums/Linux_Kernel">内核源代码研究区</a><a href="/forums/Linux_Driver">驱动程序开发区</a><a href="/forums/Linux_Hardware">CPU和硬件区</a></dd>
+              </dl>
+            </div>
+    </span>
+      <a href="/rank" class="">论坛牛人</a>
+      <a href="/total_rank" class="">排行榜</a>
+      <a href="/map" class="">论坛地图</a>
+
+        <a href="/topics/new?forum_id=J2SE" target="_blank" class="to_post">我要发贴</a>
+
+    </div>
+    <div class="search-download"><a href="/help" style="color: #4f4f4f;" target="_blank" class="help"><i class="fa fa-question-circle"></i>论坛帮助</a></div>
+  </div>
+</div>
+
+<style>
+  #csdn-toolbar .container, .news-nav .container{
+    padding-left: 0 !important;
+    margin: 0 auto !important;
+  }
+  .syntaxhighlighter, .syntaxhighlighter table td.code .container::before{
+    content: unset
+  }
+
+  .container-box{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .container-box .bbs_detail_wrap{
+    float: left;
+  }
+  .bottom-pub-footer{
+    position: relative;
+    z-index: 2;
+  }
+  .right-box{
+    float: right;
+    display: none;
+    margin-top: 29px;
+    width: 300px;
+    margin-left: 8px;
+    flex-shrink: 0;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  .third-list-box{
+    margin-bottom: -8px;
+    background-color: #fff;
+  }
+  .third-list-box dl{
+    padding: 8px 8px 0;
+  }
+  .third-list-box dl:last-child{
+    padding-bottom: 8px;
+  }
+  .third-list-box dl dt a{
+    display: block;
+    font-size: 14px;
+    color: #5c5c5c;
+    letter-spacing: 0;
+    line-height: 20px;
+    max-height: 44px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .third-list-box dl dd{
+    color: #999;
+    font-size: 12px;
+    max-height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+    margin-top: 4px;
+  }
+  @media (min-width: 1410px) {
+    .container-box{
+      width: 1300px
+    }
+    .right-box {
+      display: block;
+    }
+  }
+  @media (max-width: 1409px) {
+    .container-box{
+      width: 960px
+    }
+    .right-box {
+      display: none;
+    }
+  }
+  .persion_article {
+    width: 300px
+  }
+</style>
+<div class="container container-box clearfix">
+  <div id="left-box" style="float: left;width: 960px;">
+    <div class="bbs_detail_wrap" id="bbs_detail_wrap">
+      <div class="flash_messages">
+</div>
+
+      <div class="bbs_bread_wrap">
+        <a href="/" target="_blank">CSDN论坛</a>
+        <span>></span>
+          <a href="/forums/Java" target="_blank">Java</a>
+          <span>></span>
+        <a href="/forums/J2SE" target="_blank">Java SE</a>
+      </div>
+      <!--帖子标题-->
+      <div class="bbs_title_h"></div>
+      <div id="bbs_title_bar" class="bbs_title_bar">
+        <div class="owner_top clearfix">
+          <h3 class="owner_h fl">
+        <span class="owner_title text-overflow" title="封装与信息隐藏的区别">
+          
+          
+          
+          
+            <span class="title text_overflow">封装与信息隐藏的区别</span>
+        </span>
+            <span>
+          [问题点数：20分，结帖人java2000_net]
+        </span>
+          </h3>
+        </div>
+        <div class="mod_fun_wrap clearfix">
+	<div class="page_wrap fl">
+		<!-- page 开始-->
+		
+		<!-- page 结束-->
+	</div>
+	<ul class="fun_l fr">
+		<li>
+			<input type="hidden" id="bbs_fav_url" value="http://bbs.csdn.net/topics/190044439">
+			<input type="hidden" id="bbs_fav_title" value="封装与信息隐藏的区别">
+        <a href="javascript:;" data-bind-login = "true" onclick="window.csdn.loginBox.show()" class="fav">收藏帖子</a>
+		</li>
+
+
+			<li><a href="javascript:;" class="menu_a reply_topic" >回复</a></li>
+	</ul>
+
+</div>
+      </div>
+
+      <div id="post-190044439" class="mod_topic_wrap post topic" data-topic-id="190044439" data-post-id="190044439" data-is-topic-locked="false">
+  <dl class="topic_wrap clearfix">
+      <dt class="topic_l ">
+          <div data-username="" class="user_head">
+
+            <a href="//my.csdn.net/chunhan856" target="_blank" class="user_head_box" rel="nofollow">
+              <img src="//avatar.csdn.net/8/1/F/1_chunhan856.jpg" class="avatar">
+            </a>
+            <div class="user_material">
+              <div class="user_material_bg">
+                <dl class="user_material_c">
+                  <dt class="fl">
+                    <a href="//my.csdn.net/chunhan856" target="_blank" class="user_head_box" rel="nofollow">
+                      <img src="//avatar.csdn.net/8/1/F/1_chunhan856.jpg" class="avatar">
+                    </a>
+                  </dt>
+                    <dd>
+                      <ul class="topic_list">
+                          <li>
+                            <em>&sdot;</em><a href="/topics/240018128" target="_blank">localport 的set属性</a>
+                          </li>
+                          <li>
+                            <em>&sdot;</em><a href="/topics/230087158" target="_blank">excel读入数据到access中的空白字段问题</a>
+                          </li>
+                          <li>
+                            <em>&sdot;</em><a href="/topics/230086342" target="_blank">从excel表中获取数据</a>
+                          </li>
+                      </ul>
+                    </dd>
+                    <dd class="more_topic_wrap">
+                      <a href="/users/chunhan856/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+                  <dd class="fun_dd">
+                    <a href="javascript:;" class="follow_btn genius_att" data-username="chunhan856">关注</a>
+                    <!--下面是已关注按钮样式-->
+                    <!--a.al_follow_btn(href="javascript:;") 已关注-->
+                    <a href="//my.csdn.net/chunhan856" target="_blank">空间</a>
+                    <a href="//blog.csdn.net/chunhan856" target="_blank">博客</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        <div class="user_nick_name">
+          <div class="nick_name"><a href="//my.csdn.net/chunhan856" rel="nofollow" target="_blank" title="chunhan">chunhan</a></div>
+          <div class="user_level">
+            <img alt="Bbs1" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs1.png" />
+            <div class="topic_show_posts">
+              <div class="smallTittle">本版专家分：0</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="showTittleDD">
+        </div>
+        <div class="close_topic">
+          结帖率 34.33%
+        </div>
+      </dt>
+    <dd class="topic_r post_info floorOwner" data-username="chunhan856" data-nickname="chunhan" data-floor="0">
+      <div class="post_body post_body_min_h">
+          封装与信息隐藏的区别
+
+
+          <div marginwidth="0" marginheight="0" scrolling="no" width="100%">
+              <div>
+                <div id="kp_box_87" data-pid="87" data-track-view='{"mod":"kp_popu_87-112","con":",,"}' data-track-click='{"mod":"kp_popu_87-112","con":",,"}'><div>
+<script type="text/javascript" src="http://static.mediav.com/js/mvf_news_feed.js"></script>
+            <div id="placeholder" class="mediav_ad" ></div>
+            <script type="text/javascript">
+            NEWS_FEED({
+                w:728,//必须大于300
+                showid : '0UvTI1',
+                placeholderId : 'placeholder',//容器ID
+                fId : '',//信息流容器ID
+                inject : 'cads'
+            })
+                        </script>
+                </div></div>
+              </div>
+          </div>
+        <div class="question_wrap"><span>问题点数：</span><em>20分</em></div>
+      </div>
+      <div class="control clearfix">
+        <div class="control_l fl">
+          <label onclick="post_digg(190044439,190044439,this)" class="red_praise digg">
+            <svg aria-hidden="true" class="icon praise">
+              <use xlink:href="#csdnc-thumbsup"></use>
+            </svg>
+            <em>0</em>
+          </label>
+          <label class="date_time">2007-10-15 22:16:08</label>
+          <span class="reply_intro">回复次数</span><em class="reply_num">9</em>
+        </div>
+        <div class="control_r fr">
+            <a href="/topics/190044439?list=lz" class="only-filter">只看楼主</a>
+          <span>・</span>
+          <a href="javascript:;" rel="nofollow" class="quote">引用</a>
+          <span>・</span>
+          <a href="javascript:;" class="report_spam">举报</a>
+          <span>・</span>
+          <span class="floor">楼主</span>
+        </div>
+      </div>
+    </dd>
+  </dl>
+</div>
+
+
+      		<div id="post-140111836" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140111836" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l no_head">
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/manbaum" rel="nofollow" target="_blank" title="manbaum">manbaum</a></div>
+								<div class="user_level">
+									<img alt="Bbs4" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs4.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：1659</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="manbaum" data-nickname="manbaum" data-floor="1">
+					<div class="post_body post_body_min_h">
+							烦请楼主先写下你对此问题的理解，别人才会针对你的问题给出建议。
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140111836,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-15 22:31:22</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=7897" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#1&nbsp;得分：3</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://download.csdn.net/download/mzycd/4185915,BlogCommendFromQuerySearch_97"}' data-track-click='{"mod":"popu_592","con":",https://download.csdn.net/download/mzycd/4185915,BlogCommendFromQuerySearch_97"}'>
+							<a href="https://download.csdn.net/download/mzycd/4185915" target="_blank" title="信息隐藏技术概述">信息隐藏技术概述</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140111850" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140111850" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l no_head">
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/zhangshi1986001" rel="nofollow" target="_blank" title="张飞">张飞</a></div>
+								<div class="user_level">
+									<img alt="Bbs1" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs1.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：3</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="zhangshi1986001" data-nickname="张飞" data-floor="2">
+					<div class="post_body post_body_min_h">
+							封装是信息隐藏的手段！<br />
+
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140111850,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-15 22:33:01</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=2517746" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#2&nbsp;得分：3</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://download.csdn.net/download/suelenon/1932630,BlogCommendFromQuerySearch_96"}' data-track-click='{"mod":"popu_592","con":",https://download.csdn.net/download/suelenon/1932630,BlogCommendFromQuerySearch_96"}'>
+							<a href="https://download.csdn.net/download/suelenon/1932630" target="_blank" title="利用LSB算法进行信息隐藏的C语言实现">利用LSB算法进行信息隐藏的C语言实现</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140112733" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140112733" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l ">
+								<div data-username="" class="user_head">
+
+									<a href="//my.csdn.net/hailun" target="_blank" class="user_head_box" rel="nofollow">
+										<img src="//avatar.csdn.net/B/1/6/1_hailun.jpg" class="avatar" >
+									</a>
+									<div class="user_material">
+										<div class="user_material_bg">
+											<dl class="user_material_c">
+												<dt class="fl">
+													<a href="//my.csdn.net/hailun" target="_blank" class="user_head_box" rel="nofollow">
+														<img src="//avatar.csdn.net/B/1/6/1_hailun.jpg" class="avatar" >
+													</a>
+												</dt>
+													<dd>
+														<ul class="topic_list">
+																<li><em>&sdot;</em><a href="/topics/380101729" target="_blank">WINFORM写出来的软件，怎么给可以不安装.NET FRAMEWORK就可以运行呢</a></li>
+																<li><em>&sdot;</em><a href="/topics/380097289" target="_blank">return后为什么还会返回到方法体</a></li>
+																<li><em>&sdot;</em><a href="/topics/380096240" target="_blank">在 System.Net.WebException 中第一次偶然出现的“System.dll”类型的异常</a></li>
+														</ul>
+													</dd>
+													<dd class="more_topic_wrap"><a href="/users/hailun/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+												<dd class="fun_dd">
+													<a href="javascript:;" class="follow_btn genius_att" data-username="hailun">关注</a>
+													<!--下面是已关注按钮样式-->
+													<!--a.al_follow_btn(href="javascript:;") 已关注-->
+													<a href="//my.csdn.net/hailun" target="_blank">空间</a>
+													<a href="//blog.csdn.net/hailun" target="_blank">博客</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/hailun" rel="nofollow" target="_blank" title="hailun">hailun</a></div>
+								<div class="user_level">
+									<img alt="Bbs2" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs2.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：163</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="hailun" data-nickname="hailun" data-floor="3">
+					<div class="post_body post_body_min_h">
+							个人理解这个封装应该指的就是把成员变量和成员方法封装在此类里<br />
+而隐藏应该是指局部变量隐藏了同类里的父类变量<br />
+<br />
+我没BAIDU,你可以BAIDU一下或许可以找到答案
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140112733,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-16 07:27:27</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=1081324" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#3&nbsp;得分：3</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://download.csdn.net/download/hurricane_tx/1688648,BlogCommendFromQuerySearch_95"}' data-track-click='{"mod":"popu_592","con":",https://download.csdn.net/download/hurricane_tx/1688648,BlogCommendFromQuerySearch_95"}'>
+							<a href="https://download.csdn.net/download/hurricane_tx/1688648" target="_blank" title="基于分形几何的信息隐藏技术">基于分形几何的信息隐藏技术</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140113119" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140113119" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l no_head">
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/yuyu622" rel="nofollow" target="_blank" title="yuyu622">yuyu622</a></div>
+								<div class="user_level">
+									<img alt="Bbs4" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs4.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：1168</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="yuyu622" data-nickname="yuyu622" data-floor="4">
+					<div class="post_body post_body_min_h">
+							封装是信息隐藏的手段！&nbsp;,同意
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140113119,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-16 08:37:11</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=1903281" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#4&nbsp;得分：3</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://blog.csdn.net/Kevinhanser/article/details/82026471,BlogCommendFromQuerySearch_94"}' data-track-click='{"mod":"popu_592","con":",https://blog.csdn.net/Kevinhanser/article/details/82026471,BlogCommendFromQuerySearch_94"}'>
+							<a href="https://blog.csdn.net/Kevinhanser/article/details/82026471" target="_blank" title="MATLAB-LSB 信息隐藏">MATLAB-LSB 信息隐藏</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140120883" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140120883" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l no_head">
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/bizsys" rel="nofollow" target="_blank" title="bizsys">bizsys</a></div>
+								<div class="user_level">
+									<img alt="Bbs2" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs2.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：168</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb36" data-username="bizsys" data-nickname="bizsys" data-floor="5">
+					<div class="post_body post_body_min_h">
+							信息隐藏是封装的目的
+
+							<div>
+								<div id="kp_box_88" data-pid="88" data-track-view='{"mod":"kp_popu_88-113","con":",,"}' data-track-click='{"mod":"kp_popu_88-113","con":",,"}'><div>
+<script type="text/javascript" src="http://static.mediav.com/js/mvf_news_feed.js"></script>
+<div id="placeholder5" class="mediav_ad" ></div>
+            <script type="text/javascript">
+            NEWS_FEED({
+                w:728,//必须大于300
+                showid : '0UvTI1',
+                placeholderId : 'placeholder5',//容器ID
+                fId : '',//信息流容器ID
+                inject : 'cads'
+            })
+                        </script>
+                </div></div>
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140120883,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-16 15:39:38</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=2382981" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#5&nbsp;得分：2</span>
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140121022" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140121022" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l no_head">
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/usiboy" rel="nofollow" target="_blank" title="">usiboy</a></div>
+								<div class="user_level">
+									<img alt="Bbs1" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs1.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：55</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="usiboy" data-nickname="" data-floor="6">
+					<div class="post_body post_body_min_h">
+							同意楼上的<br />
+封装的目的是为了信息隐藏和对象能够完整
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140121022,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-16 15:46:58</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=1825106" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#6&nbsp;得分：2</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://blog.csdn.net/y794486292/article/details/42587727,BlogCommendFromQuerySearch_92"}' data-track-click='{"mod":"popu_592","con":",https://blog.csdn.net/y794486292/article/details/42587727,BlogCommendFromQuerySearch_92"}'>
+							<a href="https://blog.csdn.net/y794486292/article/details/42587727" target="_blank" title="基于像素频率的直方图修改信息可逆隐藏技术">基于像素频率的直方图修改信息可逆隐藏技术</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140121147" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140121147" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l ">
+								<div data-username="" class="user_head">
+
+									<a href="//my.csdn.net/bao110908" target="_blank" class="user_head_box" rel="nofollow">
+										<img src="//avatar.csdn.net/4/C/3/1_bao110908.jpg" class="avatar" >
+									</a>
+									<div class="user_material">
+										<div class="user_material_bg">
+											<dl class="user_material_c">
+												<dt class="fl">
+													<a href="//my.csdn.net/bao110908" target="_blank" class="user_head_box" rel="nofollow">
+														<img src="//avatar.csdn.net/4/C/3/1_bao110908.jpg" class="avatar" >
+													</a>
+												</dt>
+													<dd>
+														<ul class="topic_list">
+																<li><em>&sdot;</em><a href="/topics/391037116" target="_blank">【生日祝福】Java 20 岁生日快乐</a></li>
+																<li><em>&sdot;</em><a href="/topics/390793935" target="_blank">【生日祝福】Java 19 岁生日快乐</a></li>
+																<li><em>&sdot;</em><a href="/topics/390763891" target="_blank">【宝家族】【空空堂】有人还记得不？</a></li>
+														</ul>
+													</dd>
+													<dd class="more_topic_wrap"><a href="/users/bao110908/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+												<dd class="fun_dd">
+													<a href="javascript:;" class="follow_btn genius_att" data-username="bao110908">关注</a>
+													<!--下面是已关注按钮样式-->
+													<!--a.al_follow_btn(href="javascript:;") 已关注-->
+													<a href="//my.csdn.net/bao110908" target="_blank">空间</a>
+													<a href="//blog.csdn.net/bao110908" target="_blank">博客</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/bao110908" rel="nofollow" target="_blank" title="火龙果被占用了">火龙果被占用了</a></div>
+								<div class="user_level">
+									<img alt="Bbs10" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs10.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：114301</div>
+									</div>
+									
+								</div>
+							</div>
+								<div class="showTittleDD">
+									<span>
+										<img src="//csdnimg.cn/jifen/images/xunzhang/xunzhang/honghua.png" alt="Blank" class="xunZhang">
+										<div class="showTittle">
+											<div class="trangle"></div>
+											<dl>
+												<dt>
+													<img src="//csdnimg.cn/jifen/images/xunzhang/xunzhang/honghuamiddle.png">
+												</dt>
+												<dd>
+													<strong>红花</strong>
+													2011年3月 Java大版内专家分月排行榜第一<br/>2010年4月 Java大版内专家分月排行榜第一<br/>2010年3月 Java大版内专家分月排行榜第一<br/>2007年8月 Java大版内专家分月排行榜第一
+												</dd>
+											</dl>
+										</div>
+									</span>
+									<span>
+										<img src="//csdnimg.cn/jifen/images/xunzhang/xunzhang/huanghua.png" alt="Blank" class="xunZhang">
+										<div class="showTittle">
+											<div class="trangle"></div>
+											<dl>
+												<dt>
+													<img src="//csdnimg.cn/jifen/images/xunzhang/xunzhang/huanghuamiddle.png">
+												</dt>
+												<dd>
+													<strong>黄花</strong>
+													2011年4月 Java大版内专家分月排行榜第二<br/>2010年8月 Java大版内专家分月排行榜第二<br/>2010年5月 Java大版内专家分月排行榜第二<br/>2008年2月 Java大版内专家分月排行榜第二<br/>2007年7月 Java大版内专家分月排行榜第二
+												</dd>
+											</dl>
+										</div>
+									</span>
+									<span>
+										<img src="//csdnimg.cn/jifen/images/xunzhang/xunzhang/lanhua.png" alt="Blank" class="xunZhang">
+										<div class="showTittle">
+											<div class="trangle"></div>
+											<dl>
+												<dt>
+													<img src="//csdnimg.cn/jifen/images/xunzhang/xunzhang/lanhuamiddle.png">
+												</dt>
+												<dd>
+													<strong>蓝花</strong>
+													2011年2月 Java大版内专家分月排行榜第三<br/>2010年9月 Java大版内专家分月排行榜第三<br/>2008年9月 Java大版内专家分月排行榜第三<br/>2008年1月 Java大版内专家分月排行榜第三<br/>2007年11月 Java大版内专家分月排行榜第三<br/>2007年9月 Java大版内专家分月排行榜第三
+												</dd>
+											</dl>
+										</div>
+									</span>
+								</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="bao110908" data-nickname="火龙果被占用了" data-floor="7">
+					<div class="post_body post_body_min_h">
+							我的理解是这样的：<br />
+<br />
+封装：是指把某些数据都隐藏起来，只留下一个访问接口，对其进行访问，<br />
+　　　也就是说要访问这些数据，必须通过某种特定（唯一）的方法来实现。<br />
+<br />
+信息隐藏：我认为与封装根本就是两码事，信息隐藏是指把信息给隐蔽掉，根<br />
+　　　　　本就不让别人看到。
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140121147,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-16 15:53:07</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=1812074" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#7&nbsp;得分：2</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://download.csdn.net/download/Andysun1986/949376,BlogCommendFromQuerySearch_91"}' data-track-click='{"mod":"popu_592","con":",https://download.csdn.net/download/Andysun1986/949376,BlogCommendFromQuerySearch_91"}'>
+							<a href="https://download.csdn.net/download/Andysun1986/949376" target="_blank" title="信息隐藏实验教程源码">信息隐藏实验教程源码</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140131840" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140131840" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l ">
+								<div data-username="" class="user_head">
+
+									<a href="//my.csdn.net/usiboy" target="_blank" class="user_head_box" rel="nofollow">
+										<img src="//avatar.csdn.net/1/C/B/1_usiboy.jpg" class="avatar" >
+									</a>
+									<div class="user_material">
+										<div class="user_material_bg">
+											<dl class="user_material_c">
+												<dt class="fl">
+													<a href="//my.csdn.net/usiboy" target="_blank" class="user_head_box" rel="nofollow">
+														<img src="//avatar.csdn.net/1/C/B/1_usiboy.jpg" class="avatar" >
+													</a>
+												</dt>
+													<dd>
+														<ul class="topic_list">
+																<li><em>&sdot;</em><a href="/topics/100148847" target="_blank">如何在Tomcat服务器里使用JSTL标签</a></li>
+																<li><em>&sdot;</em><a href="/topics/100133151" target="_blank">关于Java连接MySql数据库的问题</a></li>
+																<li><em>&sdot;</em><a href="/topics/100116267" target="_blank">如何使一个列的值自动加1</a></li>
+														</ul>
+													</dd>
+													<dd class="more_topic_wrap"><a href="/users/usiboy/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+												<dd class="fun_dd">
+													<a href="javascript:;" class="follow_btn genius_att" data-username="usiboy">关注</a>
+													<!--下面是已关注按钮样式-->
+													<!--a.al_follow_btn(href="javascript:;") 已关注-->
+													<a href="//my.csdn.net/usiboy" target="_blank">空间</a>
+													<a href="//blog.csdn.net/usiboy" target="_blank">博客</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/usiboy" rel="nofollow" target="_blank" title="">usiboy</a></div>
+								<div class="user_level">
+									<img alt="Bbs1" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs1.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：55</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="usiboy" data-nickname="" data-floor="8">
+					<div class="post_body post_body_min_h">
+							楼上的不能把信息隐藏与封装的关系给分开来<br />
+就如你所说的的封装：是指把某些数据都隐藏起来，<br />
+这样的信息隐藏就不得不和封装扯上关系了<br />
+就如同我们设置一个门，门可以隐蔽房间内所有的物体<br />
+但是总不能让它一直隐蔽吧，总得让人进去和出来吧<br />
+我们就得为这个门设置开关，就如同接口，进行沟通。<br />
+如果信息隐藏是指把信息给隐蔽掉，根本就不让别人看到，<br />
+那我们所谓的信息隐蔽中的信息岂不称做信息了？因为每人<br />
+能得到它，能看到它
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140131840,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-17 12:37:48</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=1825106" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#8&nbsp;得分：0</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://download.csdn.net/download/a13070119656/8038895,BlogCommendFromQuerySearch_90"}' data-track-click='{"mod":"popu_592","con":",https://download.csdn.net/download/a13070119656/8038895,BlogCommendFromQuerySearch_90"}'>
+							<a href="https://download.csdn.net/download/a13070119656/8038895" target="_blank" title="基于TCP选项域的信息隐藏算法">基于TCP选项域的信息隐藏算法</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+		<div id="post-140131932" class="mod_topic_wrap post" data-topic-id="190044439" data-post-id="140131932" data-is-topic-locked="false">
+			<dl class="topic_wrap clearfix">
+						<dt class="topic_l ">
+								<div data-username="" class="user_head">
+
+									<a href="//my.csdn.net/idilent" target="_blank" class="user_head_box" rel="nofollow">
+										<img src="//avatar.csdn.net/6/0/4/1_idilent.jpg" class="avatar" >
+									</a>
+									<div class="user_material">
+										<div class="user_material_bg">
+											<dl class="user_material_c">
+												<dt class="fl">
+													<a href="//my.csdn.net/idilent" target="_blank" class="user_head_box" rel="nofollow">
+														<img src="//avatar.csdn.net/6/0/4/1_idilent.jpg" class="avatar" >
+													</a>
+												</dt>
+													<dd>
+														<ul class="topic_list">
+																<li><em>&sdot;</em><a href="/topics/370247801" target="_blank">求C#旋转视频代码</a></li>
+																<li><em>&sdot;</em><a href="/topics/370240290" target="_blank">C#中调用关于Bitmap的VB类库</a></li>
+																<li><em>&sdot;</em><a href="/topics/370224415" target="_blank">C#中对打印机的操作问题</a></li>
+														</ul>
+													</dd>
+													<dd class="more_topic_wrap"><a href="/users/idilent/topics" target="_blank" class="more_topic">更多帖子</a></dd>
+												<dd class="fun_dd">
+													<a href="javascript:;" class="follow_btn genius_att" data-username="idilent">关注</a>
+													<!--下面是已关注按钮样式-->
+													<!--a.al_follow_btn(href="javascript:;") 已关注-->
+													<a href="//my.csdn.net/idilent" target="_blank">空间</a>
+													<a href="//blog.csdn.net/idilent" target="_blank">博客</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							<div class="user_nick_name">
+								<div class="nick_name"><a href="//my.csdn.net/idilent" rel="nofollow" target="_blank" title="烧饼猫">烧饼猫</a></div>
+								<div class="user_level">
+									<img alt="Bbs5" class="topic_show_user_level" src="//csdnimg.cn/jifen/images/xunzhang/jianzhang/bbs5.png" />
+									<div class="topic_show_posts">
+										<div class="smallTittle">本版专家分：2044</div>
+									</div>
+									
+								</div>
+							</div>
+						</dt>
+				<dd class="topic_r post_info pb72" data-username="idilent" data-nickname="烧饼猫" data-floor="9">
+					<div class="post_body post_body_min_h">
+							封装是对实现手段的隐藏，和信息没有关系，不是隐藏信息，而是隐藏手段。<br />
+而信息隐藏，根本没有听说过。<br />
+<br />
+不知道为什么又提出这个概念性的东西，没有实践，只是本本主义、纸上谈兵。<br />
+<br />
+不过面试的时候倒是很好，谁让现在的面试都那么可笑呢。
+
+							<div>
+								
+							</div>
+					</div>
+					<div class="control clearfix">
+						<div class="control_l fl">
+							<label onclick="post_digg(190044439,140131932,this)" class="red_praise digg">
+								<svg aria-hidden="true" class="icon praise">
+									<use xlink:href="#csdnc-thumbsup"></use>
+								</svg><em>0</em>
+							</label>
+							<label class="date_time">2007-10-17 12:43:14</label>
+						</div>
+						<div class="control_r fr">
+								<a href="/topics/190044439?list=352947" class="only-filter">只看TA</a>
+							<span>・</span>
+							<a href="javascript:;" rel="nofollow" class="quote">引用</a>
+							<span>・</span>
+							<a href="javascript:;" class="report_spam">举报</a>
+							<span>・</span>
+							<span class="floor">#9&nbsp;得分：2</span>
+						</div>
+					</div>
+						<div class="post_recommend" data-track-view='{"mod":"popu_592","con":",https://download.csdn.net/download/zhaolong12323/10350844,BlogCommendFromQuerySearch_89"}' data-track-click='{"mod":"popu_592","con":",https://download.csdn.net/download/zhaolong12323/10350844,BlogCommendFromQuerySearch_89"}'>
+							<a href="https://download.csdn.net/download/zhaolong12323/10350844" target="_blank" title="《信息隐藏技术实验教程》MATLAB源码">《信息隐藏技术实验教程》MATLAB源码</a>
+						</div>
+				</dd>
+			</dl>
+		</div>
+
+
+      <script>
+          //收藏帖子
+          (function() {
+              var bbs_fav_url = $('#bbs_fav_url').val();
+              var bbs_fav_title = $('#bbs_fav_title').val();
+
+              $.ajax({
+                  url: 'https://my.csdn.net/index.php/my/favorite/do_check',
+                  dataType: 'json',
+                  type: 'get',
+                  xhrFields: { withCredentials: true },
+                  crossDomain: true,
+                  data:{url:bbs_fav_url},
+                  success: function(json) {
+                      if(json.is_exist==1){
+                          $('#bbs_fav').html('取消收藏');
+                          $('#bbs_fav').on('click',function(){
+                              del_bbs_fav(json.favorite_id);
+                          });
+                      }else{
+                          $('#bbs_fav').html('收藏帖子');
+                          $('#bbs_fav').on('click',function(){
+                              bbs_fav();
+                          });
+                      }
+                  },
+                  error: function(e) {
+                      console.log(e);
+                  }
+              });
+
+              function bbs_fav(){
+                  $.ajax({
+                      url: 'https://my.csdn.net/index.php/my/favorite/do_add/2',
+                      dataType: 'json',
+                      type: 'get',
+                      xhrFields: { withCredentials: true },
+                      crossDomain: true,
+                      data:{title:bbs_fav_title,url:bbs_fav_url,share:1,map_name:''},
+                      success: function(json) {
+                          if(json.succ==1){
+                              alert('收藏成功');
+                              window.location.reload();
+                          }else{
+                              alert(json.msg);
+                          }
+                      },
+                      error: function() {
+                      }
+                  });
+              }
+              function del_bbs_fav(id){
+                  $.ajax({
+                      url: 'https://my.csdn.net/index.php/my/favorite/do_delete/'+id.toString(),
+                      dataType: 'json',
+                      type: 'get',
+                      xhrFields: { withCredentials: true },
+                      crossDomain: true,
+                      data:{},
+                      success: function(json) {
+                          if(json.succ==1){
+                              alert('取消收藏成功');
+                              window.location.reload();
+                          }else{
+                              alert(json.msg);
+                          }
+                      },
+                      error: function() {
+                      }
+                  });
+              }
+          })();
+          // 点赞
+          function post_digg(topic_id,post_id,obj){
+              window.csdn.loginBox.show();
+              return false
+              $.ajax({
+                  type:'PUT',
+                  dataType: "json",
+                  url:'/posts/'+post_id.toString()+'/digg',
+                  data: {
+                      topic_id: topic_id.toString()
+                  },
+                  success: function(json){
+                      if(json.success){
+                          $(obj).find("em").text(json.digg);
+                      }else{
+                          alert("您已经投过票了");
+                      }
+                  }
+              })
+          }
+
+          function post_bury(topic_id,post_id,obj){
+              $.ajax({
+                  type:'PUT',
+                  dataType: "json",
+                  url:'/posts/'+post_id.toString()+'/bury',
+                  data: {
+                      topic_id: topic_id.toString()
+                  },
+                  success: function(json){
+                      if(json.success){
+                          $(obj).find("em").text(json.bury);
+                      }else{
+                          alert("您已经投过票了");
+                      }
+                  }
+              })
+          }
+      </script>
+      <div class="mod_fun_wrap clearfix">
+	<div class="page_wrap fl">
+		<!-- page 开始-->
+		
+		<!-- page 结束-->
+	</div>
+	<ul class="fun_l fr">
+		<li>
+			<input type="hidden" id="bbs_fav_url" value="http://bbs.csdn.net/topics/190044439">
+			<input type="hidden" id="bbs_fav_title" value="封装与信息隐藏的区别">
+        <a href="javascript:;" data-bind-login = "true" onclick="window.csdn.loginBox.show()" class="fav">收藏帖子</a>
+		</li>
+
+
+	</ul>
+
+</div>
+      <script>
+          $('em.jumpMenu').click(function() {
+              var page = $(this).parent().find('input.page_inpt').val();
+              if (page != 1) {
+                  window.location.href = (window.location.pathname + '?page=' + page);
+              } else {
+                  window.location.href = window.location.pathname;
+              }
+          });
+      </script>
+
+        <div class="pulllog-box" style="display: block;">
+          <div class="pulllog clearfix">
+            <span class="text floatL" id="ad-container">
+                <!-- 广告位：PC-博客内页底通 文字链位置 -->
+                <script>
+                    (function() {
+                        (window.slotbydup=window.slotbydup || []).push({
+                            id: '5872554',
+                            container: 'ad-container',
+                            size: '690,36',
+                            display: 'inlay-fix'
+                        })
+                    })()
+                </script>
+                <script src="http://dup.baidustatic.com/js/os.js"></script>
+            </span>
+            <div class="pulllog-btn floatR clearfix">
+              <a class="pulllog-login floatL csdn-tracking-statistics tracking-click" data-mod="popu_557" href="https://passport.csdn.net/account/login" target="_blank">登录</a>
+              <a class="pulllog-sigin floatL csdn-tracking-statistics tracking-click" data-mod="popu_558" href="https://passport.csdn.net/account/mobileregister" target="_blank">注册</a>
+              <button class="btn-close">+</button>
+            </div>
+          </div>
+        </div>
+        <script>
+            (function() {
+                //close footer login box
+                var pullBox = $(".pulllog-box")
+                pullBox.find("button.btn-close").click(function() {
+                    pullBox.remove()
+                })
+            })()
+        </script>
+        <span class="login" id="new_post">匿名用户不能发表回复！</span>
+    </div>
+      <!--相关推荐feed-->
+      <div class="mod_topic_wrap" style="float: left">
+        <div class="post_feed_box">
+          <dl class="bbs_feed">
+            <dt class="bbs_feed_title">其他相关推荐</dt>
+          </dl>
+          <div id="post_feed_wrap" class="post_feed_wrap" >
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/acloudhuang/article/details/6635230,BlogCommendFromBaidu_0"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/acloudhuang/article/details/6635230,BlogCommendFromBaidu_0"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/acloudhuang/article/details/6635230" target="_blank" title="<em>信息隐藏</em>(Information Hiding)原则-acloudhuang的专栏"><em>信息隐藏</em>(Information Hiding)原则-acloudhuang的专栏</a>
+                </dt>
+                <dd><em>信息隐藏</em>(Information Hiding)原则黄国强 2006-10-25      <em>信息隐藏</em>是结构化设计与面向对象设计的基础。在结构化中函数的概念和面向对象的<em>封装</em>思想都来源于<em>信息隐藏</em>。软件业对这个原则的认同也是最近十年的事情。      David Parnas在1972</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/weixin_42420703/article/details/83822008,BlogCommendFromBaidu_1"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/weixin_42420703/article/details/83822008,BlogCommendFromBaidu_1"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/weixin_42420703/article/details/83822008" target="_blank" title="<em>封装</em>和<em>信息隐藏</em>-xiaoxu的博客"><em>封装</em>和<em>信息隐藏</em>-xiaoxu的博客</a>
+                </dt>
+                <dd>文章目录3.1 <em>信息隐藏</em>原则3.1.1 <em>封装</em>与<em>信息隐藏</em>3.1.2 接口扮演的角色3.2 创建对象的基本模式3.2.1 门户大开型对象3.2.2 用命名规范<em>区别</em>私用成员3.2.3 作用域、嵌套函数和闭包3.2.4 用闭包实现私用成员3.3 更多高级对象创建模式3.3.1 静态方法和属性3.3.2 常量3.3.3 单体和对象工厂3.4 <em>封装</em>之利3.5 <em>封装</em>之弊3.6 小结
+
+为对象创建私用成员是任何面...</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/u010574553/article/details/54407899,BlogCommendFromBaidu_2"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/u010574553/article/details/54407899,BlogCommendFromBaidu_2"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/u010574553/article/details/54407899" target="_blank" title="隐藏和<em>封装</em>-ai30001的博客">隐藏和<em>封装</em>-ai30001的博客</a>
+                </dt>
+                <dd>JAVA提供了三个访问控制符：private、protected、public；分别代表了3个访问控制级别；另外还有一个不加任何访问控制符的访问控制级别，提供了4个访问控制级别，java的访问控制级别由小到大如下图所示： 
+这四个访问控制级别的详细介绍如下：
+private（当前类访问权限）：如果类里的一个成员（包括成员变量、方法和构造器等）使用private访问控制符来修饰，则这个成员只能在当前类</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_93" data-pid="93" data-track-view='{"mod":"kp_popu_93-118","con":",,"}' data-track-click='{"mod":"kp_popu_93-118","con":",,"}'><!--360广告开始-->
+        <div>
+<script type="text/javascript" src="http://static.mediav.com/js/mvf_news_feed.js"></script>
+            <div id="info_ad0" class="mediav_ad" ></div>
+            <script type="text/javascript">
+            NEWS_FEED({
+                      w: 920,
+                      h : 66,
+                      showid : 'wc4SIC',
+                      placeholderId: "info_ad0",
+                      inject : 'define',
+                      define : {
+                          imagePosition : 'right',
+                          imageBorderRadius : 0,
+                          imageWidth: 80,
+                          imageHeight: 60,
+                          imageFill : 'clip',
+                          displayImage : true,
+                          displayTitle : true,
+                          titleFontSize: 16,
+                          titleFontColor: '#3d3d3d',
+                          titleFontFamily : 'Microsoft Yahei',
+                          titleFontWeight: 'normal',
+                          titlePaddingTop : 0,
+                          titlePaddingRight : 0,
+                          titlePaddingBottom : 13,
+                          titlePaddingLeft : 0,
+                          displayDesc : true,
+                          descFontSize: 14,
+                          descFontColor: '#8e959a',
+                          descFontFamily : 'Microsoft Yahei',
+                          paddingTop : 5,
+                          paddingRight : 0,
+                          paddingBottom : 5,
+                          paddingLeft : 0,
+                          backgroundColor: '#fff',
+                          hoverColor: '#f44444'
+                      }
+                  })
+			</script>
+		</div>
+		<!--360广告结束--></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/goodgirl1991/article/details/51064721,BlogCommendFromQuerySearch_3"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/goodgirl1991/article/details/51064721,BlogCommendFromQuerySearch_3"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/goodgirl1991/article/details/51064721" target="_blank" title="js中的<em>信息隐藏</em>——<em>封装</em>-goodgirl1991的专栏">js中的<em>信息隐藏</em>——<em>封装</em>-goodgirl1991的专栏</a>
+                </dt>
+                <dd>其中部分示例代码来源于《JavaScript设计模式》一书
+<em>封装</em>的主要目的就是将部分变量和函数隐藏起来，只让使用者看到想让他们看到的东西，而隐藏起来不想让他们看到的东西。这样做有以下好处：
+
+防止他们对这些东西进行误操作。减弱类与类之间的耦合性，增强各个模块、各个类的独立性，从而便于对类的修改和替换。
+最简单的<em>封装</em>举例
+不隐藏信息的类的定义：
+function foo() {
+    </dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/gebgwt/1355972,BlogCommendFromQuerySearch_4"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/gebgwt/1355972,BlogCommendFromQuerySearch_4"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/gebgwt/1355972" target="_blank" title="<em>信息隐藏</em>技术和数字水印技术的相同点和不同点--"><em>信息隐藏</em>技术和数字水印技术的相同点和不同点--</a>
+                </dt>
+                <dd>摘 要
+
+    随着计算机网络技术的高速发展,虚拟信息世界越来越多的走进了平常百姓家里,由此引发的信息安全及保密和知识产权不断被盗用等问题越发严重,而传统的加密系统却不能解决这一问题,这就导致了新的信息安全技术产生----<em>信息隐藏</em>技术.随着人们越来越多的使用虚拟网络进行交谈,交易,存储信息等,<em>信息隐藏</em>技术也日渐完善,而随着许多电子产品的传播,<em>信息隐藏</em>技术中的数字水印技术也不断完善,日益成熟.</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/sdudubing/article/details/6625687,BlogCommendFromQuerySearch_5"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/sdudubing/article/details/6625687,BlogCommendFromQuerySearch_5"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/sdudubing/article/details/6625687" target="_blank" title="<em>信息隐藏</em>与类的<em>封装</em>-sdudubing的专栏"><em>信息隐藏</em>与类的<em>封装</em>-sdudubing的专栏</a>
+                </dt>
+                <dd>C++对C的最根本的改变就是把函数放进了结构之中，从而产生了C++类。类把数据和函数捆绑在一起，其中数据表示类的属性（数据成员），函数表示类的行为，也称为成员函数、方法或者服务。C++提供了关键字public、private、和protected用于声明哪些数据和函数是可以公开访</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/gjggj/article/details/78762177,BlogCommendFromQuerySearch_6"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/gjggj/article/details/78762177,BlogCommendFromQuerySearch_6"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/gjggj/article/details/78762177" target="_blank" title="<em>信息隐藏</em>技术与应用期末复习-月已满西楼的博客"><em>信息隐藏</em>技术与应用期末复习-月已满西楼的博客</a>
+                </dt>
+                <dd>第一章
+什么是<em>信息隐藏</em>？ 
+<em>信息隐藏</em>是将秘密<em>信息隐藏</em>到一般的非秘密的数字媒体文件中，从而不让对手发觉的一种方法。
+<em>信息隐藏</em>的应用领域： 
+数据保密 
+数据的不可抵赖性 
+数字作品的版权保护 
+防伪 
+数据的完整性
+数字水印的应用领域： 
+用于版权的保护 
+用于盗版跟踪的数字指纹 
+用于图像认证的水印 
+商业交易中的票据防伪 
+隐蔽标示 
+隐蔽通信及其对抗 
+数字广播电视分级控制 
+<em>信息隐藏</em>与密码学的</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/goodguest666/2334146,BlogCommendFromQuerySearch_7"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/goodguest666/2334146,BlogCommendFromQuerySearch_7"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/goodguest666/2334146" target="_blank" title="JavaScript_设计模式_中文版_第3章-<em>封装</em>和<em>信息隐藏</em>--">JavaScript_设计模式_中文版_第3章-<em>封装</em>和<em>信息隐藏</em>--</a>
+                </dt>
+                <dd>JavaScript 设计模式-<em>封装</em>和<em>信息隐藏</em></dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_94" data-pid="94" data-track-view='{"mod":"kp_popu_94-119","con":",,"}' data-track-click='{"mod":"kp_popu_94-119","con":",,"}'><!--360广告开始-->
+        <div>	
+<!--
+<script type="text/javascript" src="http://static.mediav.com/js/mvf_news_feed.js"></script>
+-->	
+            <div id="info_ad8" class="mediav_ad" ></div>
+            <script type="text/javascript">
+            NEWS_FEED({
+                      w: 920,
+                      h : 66,
+                      showid : 'wc4SIC',
+                      placeholderId: "info_ad8",
+                      inject : 'define',
+                      define : {
+                          imagePosition : 'right',
+                          imageBorderRadius : 0,
+                          imageWidth: 80,
+                          imageHeight: 60,
+                          imageFill : 'clip',
+                          displayImage : true,
+                          displayTitle : true,
+                          titleFontSize: 16,
+                          titleFontColor: '#3d3d3d',
+                          titleFontFamily : 'Microsoft Yahei',
+                          titleFontWeight: 'normal',
+                          titlePaddingTop : 0,
+                          titlePaddingRight : 0,
+                          titlePaddingBottom : 13,
+                          titlePaddingLeft : 0,
+                          displayDesc : true,
+                          descFontSize: 14,
+                          descFontColor: '#8e959a',
+                          descFontFamily : 'Microsoft Yahei',
+                          paddingTop : 5,
+                          paddingRight : 0,
+                          paddingBottom : 5,
+                          paddingLeft : 0,
+                          backgroundColor: '#fff',
+                          hoverColor: '#f44444'
+                      }
+                  })
+			</script>
+		</div>
+		<!--360广告结束--></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/weixin_36146275/article/details/54896083,BlogCommendFromQuerySearch_8"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/weixin_36146275/article/details/54896083,BlogCommendFromQuerySearch_8"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/weixin_36146275/article/details/54896083" target="_blank" title="面向对象三大特性之<em>封装</em>（一）-知易行难">面向对象三大特性之<em>封装</em>（一）-知易行难</a>
+                </dt>
+                <dd><em>封装</em>是面向对象方法的重要原则，就是把对象的属性和操作（或服务）结合为一个独立的整体，并尽可能地隐藏对象的内部实现细节。
+<em>封装</em>是一种<em>信息隐藏</em>技术。
+例子：
+新建一个Apple类
+/**
+ * Apple类没有进行<em>封装</em>，它的内部信息和具体实现会对外界暴露
+ */
+public class Apple {
+	//单价
+	int price = 5;
+	
+	//产地
+	String</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/l545665786/article/details/50504567,BlogCommendFromQuerySearch_9"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/l545665786/article/details/50504567,BlogCommendFromQuerySearch_9"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/l545665786/article/details/50504567" target="_blank" title="面向对象(隐藏和<em>封装</em>)-l545665786的博客">面向对象(隐藏和<em>封装</em>)-l545665786的博客</a>
+                </dt>
+                <dd>面向对象隐藏和<em>封装</em>
+理解<em>封装</em>
+使用访问控制符
+合成存取方法面向对象(隐藏和<em>封装</em>)理解<em>封装</em><em>封装</em>是面向对象程序语言对客观世界的模拟，在客观世界中对象的成员变量(用于描述对象的状态数据)都被隐藏在对象内部，外部无法直接操作和修改。 
+对一个类或对象实现良好的<em>封装</em>，可以实现以下目的。 - 隐藏类的实现细节
+ - 让使用者只能通过事先预定的方法来访问数据，从而可以在该方法里加入控制逻辑，限制对成员变量的不合理</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/tmdlife/article/details/51999871,BlogCommendFromQuerySearch_10"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/tmdlife/article/details/51999871,BlogCommendFromQuerySearch_10"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/tmdlife/article/details/51999871" target="_blank" title="JAVA 面向对象 隐藏和<em>封装</em>-我就是认真的随便写写程序.">JAVA 面向对象 隐藏和<em>封装</em>-我就是认真的随便写写程序.</a>
+                </dt>
+                <dd>本页面更新日期: 2016年07月22日前言
+  在前面程序中,经常出现通过某个对象直接访问其成员变量的情况. 
+  这可能引起一些潜在问题,比如将某个 Person 的 age 成员变量直接设为 1000. 
+  这在语法上没有任何问题, 但显然违背了当前的自然规律. 人怎么可能活到 1000岁  - - . (就现在的科学来讲) 
+  Java也考虑到了这种情况, 为你提供了 类和对象的成员变量</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://bbs.csdn.net/topics/60229932,BlogCommendFromQuerySearch_11"}' data-track-click='{"mod":"popu_645","con":",https://bbs.csdn.net/topics/60229932,BlogCommendFromQuerySearch_11"}'>
+                <dt>
+                  <a href="https://bbs.csdn.net/topics/60229932" target="_blank" title="关于<em>封装</em>和<em>信息隐藏</em>的问题--">关于<em>封装</em>和<em>信息隐藏</em>的问题--</a>
+                </dt>
+                <dd>小弟刚刚开始学习软件工程和面向对象技术。rn有一个问题想请教一下rn为什么说<em>封装</em>一定蕴含<em>信息隐藏</em>而<em>信息隐藏</em>不能蕴含<em>封装</em>呢？rn谁能给举个具体的例子啊rn</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/CherishLyf/article/details/50456879,BlogCommendFromQuerySearch_12"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/CherishLyf/article/details/50456879,BlogCommendFromQuerySearch_12"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/CherishLyf/article/details/50456879" target="_blank" title="JavaScript设计模式 --- <em>封装</em>和<em>信息隐藏</em>-CherishLyf">JavaScript设计模式 --- <em>封装</em>和<em>信息隐藏</em>-CherishLyf</a>
+                </dt>
+                <dd><em>封装</em>和<em>信息隐藏</em><em>信息隐藏</em>原则<em>封装</em>与<em>信息隐藏</em><em>封装</em> 可以被定义为对对象的内部数据表现形式和实现细节进行隐藏。 
+创建对象的基本模式JavaScript中创建对象的基本模式有3种： 
+第一种 门户大开型最简单的一种方式，但只提供公共成员。 
+第二种 使用下划线来表示方法和属性的私用性。 
+第三种 使用闭包来创建真正的私用成员，这些成员只能通过一些特权方法。以Book类为例，假设你接到一项任务，用来储存关于一</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_95" data-pid="95" data-track-view='{"mod":"kp_popu_95-120","con":",,"}' data-track-click='{"mod":"kp_popu_95-120","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad13" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3539104\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/wkyb608/article/details/5867802,BlogCommendFromQuerySearch_13"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/wkyb608/article/details/5867802,BlogCommendFromQuerySearch_13"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/wkyb608/article/details/5867802" target="_blank" title="有关<em>封装</em>和<em>信息隐藏</em>的误区 -wkyb608的专栏">有关<em>封装</em>和<em>信息隐藏</em>的误区 -wkyb608的专栏</a>
+                </dt>
+                <dd>上次介绍Python的面对对象特性 ，其中扯到了<em>封装</em>（Encapsulation）等概念。当时为了不跑题，没有深入聊这些概念。考虑到很多开发人员对这些概念，经常混淆不清。今天再专门来说一下。　　★<em>封装</em> 　　◇什么是<em>封装</em>？　　从字面意思来看，<em>封装</em>就是把一些相关的 东西打包成一坨（看到“坨”这个量词，不要想歪了）。“<em>封装</em>”最广为人知的例子，就是在面向对象编程（以下简称OOP）里面，把数据和针对该数据的操作，统一到一个class里。<br /</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/kbh1983/article/details/7779556,BlogCommendFromQuerySearch_14"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/kbh1983/article/details/7779556,BlogCommendFromQuerySearch_14"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/kbh1983/article/details/7779556" target="_blank" title="javascript设计模式--<em>封装</em>和<em>信息隐藏</em>（下）-下一站永远的专栏">javascript设计模式--<em>封装</em>和<em>信息隐藏</em>（下）-下一站永远的专栏</a>
+                </dt>
+                <dd>今天讲解的内容是高级模式（Advanced Patterns），如何实现静态方法和属性，常量还有其他一些知识点。
+　　1.静态方法和属性
+　　其实要实现这一功能还是要借助于闭包。在上一讲中的第三种实现方式也使用了闭包，但通过那种实现，内部属性和方法是实例级别的。
+
+var book1=new Book('isbn1','title1','author1');
+var book2=new B</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/football111/article/details/19419885,BlogCommendFromQuerySearch_15"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/football111/article/details/19419885,BlogCommendFromQuerySearch_15"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/football111/article/details/19419885" target="_blank" title="有关<em>封装</em>和<em>信息隐藏</em>的误区-football111的专栏">有关<em>封装</em>和<em>信息隐藏</em>的误区-football111的专栏</a>
+                </dt>
+                <dd>上次介绍Python的面对对象特性 ，其中扯到了<em>封装</em>（Encapsulation）等概念。当时为了不跑题，没有深入聊这些概念。考虑到很多开发人员对这些概念，经常混淆不清。今天再专门来说一下。 rnrn　　★<em>封装</em> rn　　◇什么是<em>封装</em>？ rn　　从字面意思来看，<em>封装</em>就是把一些相关的 东西打包成一坨（看到“坨”这个量词，不要想歪了）。“<em>封装</em>”最广为人知的例子，就是在面向对象编程（以下简称OOP）里面，</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/neko233/10201360,BlogCommendFromQuerySearch_16"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/neko233/10201360,BlogCommendFromQuerySearch_16"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/neko233/10201360" target="_blank" title="<em>信息隐藏</em>技术与应用武汉大学出版社  课后答案-neko233"><em>信息隐藏</em>技术与应用武汉大学出版社  课后答案-neko233</a>
+                </dt>
+                <dd><em>信息隐藏</em>技术与应用课后答案 自己整理的 大部分都有 开卷考试用</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_29482093/8911973,BlogCommendFromQuerySearch_17"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_29482093/8911973,BlogCommendFromQuerySearch_17"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/qq_29482093/8911973" target="_blank" title="<em>信息隐藏</em>课程设计-qq_29482093"><em>信息隐藏</em>课程设计-qq_29482093</a>
+                </dt>
+                <dd><em>信息隐藏</em>技术课程设计，使用易语言完成。文件包含软件、使用说明、易语言源代码。软件功能有两个：<em>信息隐藏</em>和信息提取功能。</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_96" data-pid="96" data-track-view='{"mod":"kp_popu_96-121","con":",,"}' data-track-click='{"mod":"kp_popu_96-121","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad18" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            placeholderId: "three_ad18",
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3539104\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/miao0967020148/article/details/72896267,BlogCommendFromQuerySearch_18"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/miao0967020148/article/details/72896267,BlogCommendFromQuerySearch_18"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/miao0967020148/article/details/72896267" target="_blank" title="<em>信息隐藏</em>技术的应用分支-miao0967020148的专栏"><em>信息隐藏</em>技术的应用分支-miao0967020148的专栏</a>
+                </dt>
+                <dd><em>信息隐藏</em>技术有很多实际应用的实例。FabienA.P.Petitcolas 等按照用途的不同，将<em>信息隐藏</em>技术分为若干分支，如图1所示。
+
+
+
+图1 <em>信息隐藏</em>的分支
+狭义的隐蔽信道：特指那些“完全没有打算（在正常的应用场景中）用于进行信息传输”的信道。
+匿名：特指对通信参与者的身份甚至存在性的隐藏的操作和相应的方法。
+版权标记：（在很多场合下也被不甚准确地贯以水印之名）强调对主动攻击的</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/Joczu/article/details/72235617,BlogCommendFromQuerySearch_19"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/Joczu/article/details/72235617,BlogCommendFromQuerySearch_19"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/Joczu/article/details/72235617" target="_blank" title="图像处理之<em>信息隐藏</em>-Joczu的博客">图像处理之<em>信息隐藏</em>-Joczu的博客</a>
+                </dt>
+                <dd>matlab处理图像入门级实验</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/qq_23291783/article/details/53664987,BlogCommendFromQuerySearch_20"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/qq_23291783/article/details/53664987,BlogCommendFromQuerySearch_20"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/qq_23291783/article/details/53664987" target="_blank" title="<em>信息隐藏</em>专业会议-raywang5288的博客"><em>信息隐藏</em>专业会议-raywang5288的博客</a>
+                </dt>
+                <dd>原网址     http://blog.sina.com.cn/s/blog_60ec7b2d0100qyp4.html
+
+
+从<em>信息隐藏</em>的角度看，国际会议的最新排名情况如下：
+
+一、国际<em>信息隐藏</em>界公认权威学术会议: Information Hiding 
+
+该会议的影响力大于在IEEE Transaction的杂志发表一篇长文。
+到2007年已经举办了9届。每届也就收录20篇左右的</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/u011630458/article/details/46923507,BlogCommendFromQuerySearch_21"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/u011630458/article/details/46923507,BlogCommendFromQuerySearch_21"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/u011630458/article/details/46923507" target="_blank" title="图像<em>信息隐藏</em>-羽凌寒">图像<em>信息隐藏</em>-羽凌寒</a>
+                </dt>
+                <dd>简介
+　　本篇介绍和讲解如何在图像中隐藏一些信息。
+
+
+具体实现
+
+基本流程
+　　一共分为两部分：第一部分是生成隐藏的加密图像，另一部分是对加密图像解密，显示出被隐藏的信息。
+
+
+生成加密图像
+
+具体代码
+
+
+
+?
+
+
+
+
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/qq_15037231/article/details/60580691,BlogCommendFromQuerySearch_22"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/qq_15037231/article/details/60580691,BlogCommendFromQuerySearch_22"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/qq_15037231/article/details/60580691" target="_blank" title="<em>信息隐藏</em>和局部化-斜阳雨陌"><em>信息隐藏</em>和局部化-斜阳雨陌</a>
+                </dt>
+                <dd><em>信息隐藏</em>原理：应该这样设计和确定模块，使得一个模块内包含的信息(过程和数据)对于不需要这些信息的模块来说，是不能访问的。
+局部化是指把一些关系密切的软件元素物理地放得彼此靠近。
+如果在测试期间和以后的软件维护期间需要修改软件，使用<em>信息隐藏</em>原理作为模块化系统设计的标准就会带来极大好处。</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_97" data-pid="97" data-track-view='{"mod":"kp_popu_97-122","con":",,"}' data-track-click='{"mod":"kp_popu_97-122","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad23" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3539104\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/wangzhichunnihao/10163233,BlogCommendFromQuerySearch_23"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/wangzhichunnihao/10163233,BlogCommendFromQuerySearch_23"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/wangzhichunnihao/10163233" target="_blank" title="【被评为最好最全的<em>信息隐藏</em>技术学习教程了PDF和Matlab代码，内附本书代码】<em>信息隐藏</em>技术教程和代码（王丽娜 郭迟 李鹏）-王小波门下走狗">【被评为最好最全的<em>信息隐藏</em>技术学习教程了PDF和Matlab代码，内附本书代码】<em>信息隐藏</em>技术教程和代码（王丽娜 郭迟 李鹏）-王小波门下走狗</a>
+                </dt>
+                <dd>【被评为最好最全的<em>信息隐藏</em>技术学习教程了PDF和Matlab代码，内附本书代码】<em>信息隐藏</em>技术教程和代码（王丽娜 郭迟 李鹏）  <em>信息隐藏</em> 图像隐藏 LSB图像隐藏 文字隐藏 数字水印 水印攻击</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/GongchuangSu/article/details/53895916,BlogCommendFromQuerySearch_24"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/GongchuangSu/article/details/53895916,BlogCommendFromQuerySearch_24"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/GongchuangSu/article/details/53895916" target="_blank" title="Java学习笔记之<em>信息隐藏</em>(Information Hiding)-贱贱的梦想">Java学习笔记之<em>信息隐藏</em>(Information Hiding)-贱贱的梦想</a>
+                </dt>
+                <dd>好的类接口就像是冰山的尖儿一样，让类的大部分内容都不会暴露出来什么是<em>信息隐藏</em><em>信息隐藏</em>指在设计和确定模块时，使得一个模块内包含的特定信息（过程或数据），对于不需要这些信息的其他模块来说，是不可访问的。
+  1972年，David Parnas 发表了一篇题为《论将系统分解为模块的准则》的论文首次让公众注意到<em>信息隐藏</em>这一概念。 
+  <em>信息隐藏</em>式结构程序设计与面向对象设计的基础之一。在面向对象设计中，它又</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/u010807846/article/details/52838815,BlogCommendFromQuerySearch_25"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/u010807846/article/details/52838815,BlogCommendFromQuerySearch_25"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/u010807846/article/details/52838815" target="_blank" title="利用LSB进行<em>信息隐藏</em>-郭司令">利用LSB进行<em>信息隐藏</em>-郭司令</a>
+                </dt>
+                <dd>本文介绍如何LSB（Least Significant Bits）如何进行<em>信息隐藏</em>的，基本知识不在此叙述了。
+<em>信息隐藏</em>分为embedding 和extraction.
+下面这个表格可以简单解释。吐槽一下，CSDN表格太特么难用了。
+
+
+添加隐秘信息到图像中，
+语句1：X(i,j) - mod(X(i,j),2) + Msg(i)
+语句2：bitand(X(i,j),254) + Ms</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/qq_38253732/article/details/82916433,BlogCommendFromQuerySearch_26"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/qq_38253732/article/details/82916433,BlogCommendFromQuerySearch_26"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/qq_38253732/article/details/82916433" target="_blank" title="简单的图像<em>信息隐藏</em>-qq_38253732的博客">简单的图像<em>信息隐藏</em>-qq_38253732的博客</a>
+                </dt>
+                <dd>1 背景介绍
+
+1.1 图像类型
+
+1.1.1 灰度图像
+
+灰度图像是包含灰度级（亮度）的图像。在MATLAB中，灰度图像由一个uint8,uint16或双精度类型的数组来描述。灰度图像实际上是一个数据矩阵 I ，该矩阵的每一个元素对应于图像的一个像素点，元素的值代表一定范围内的灰度级。通常0代表黑色，对于二值图像，1代表白色，对于存储类型可用uint8描述的图像，255代表白色。
+
+1.1.2 ...</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/gaoapp/article/details/70942478,BlogCommendFromQuerySearch_27"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/gaoapp/article/details/70942478,BlogCommendFromQuerySearch_27"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/gaoapp/article/details/70942478" target="_blank" title="<em>信息隐藏</em>-空域隐藏-python-LSB-mynd天堂"><em>信息隐藏</em>-空域隐藏-python-LSB-mynd天堂</a>
+                </dt>
+                <dd>LSB 中文名字全称为最低有效位。
+常见的<em>信息隐藏</em>图片格式一般为png或者bmp这类无损压缩的图片且是8位图或者24位图，8位图是使用我们的调色板
+来保存颜色值，可以正好代表2的8次方256种颜色。8位即占一个字节，24位图及占3字节，我们用r,g,b来表示。
+对于这些字节的最后一位我们无论其是0或者1，这于这张照片的显示来说，我们从肉眼是分辨不出来的（实际上，最后3位我们都可以进行改变且我</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_98" data-pid="98" data-track-view='{"mod":"kp_popu_98-123","con":",,"}' data-track-click='{"mod":"kp_popu_98-123","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad28" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3539104\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/u012189995/8530035,BlogCommendFromQuerySearch_28"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/u012189995/8530035,BlogCommendFromQuerySearch_28"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/u012189995/8530035" target="_blank" title="MATLAB实现的<em>信息隐藏</em>-yc03041081">MATLAB实现的<em>信息隐藏</em>-yc03041081</a>
+                </dt>
+                <dd>本文件功能：实现<em>信息隐藏</em>，并在高斯信道上传输
+具体过程：对秘密信息先进行伪随机加扰并进行31-21bch纠错编码，而后进行映射编码成错误样图。然后将错误样图数量接在载体后便于接收端解出嵌入位置，对载体7-4汉明信道编码，并将秘密信息错误样图嵌入（利用随机选择位置,平均嵌入）。送入信道传输，接收端解密。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/wmrem/article/details/80922808,BlogCommendFromQuerySearch_29"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/wmrem/article/details/80922808,BlogCommendFromQuerySearch_29"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/wmrem/article/details/80922808" target="_blank" title="Matlab-LSB<em>信息隐藏</em>实验-wmren">Matlab-LSB<em>信息隐藏</em>实验-wmren</a>
+                </dt>
+                <dd>一、实验内容实验完成形式： 用MATLAB函数实现LSB<em>信息隐藏</em>和提取实验选择载体： 512×512灰度图像实验效果和分析： 1.完成基本的LSB<em>信息隐藏</em>及提取2.能随机选择嵌入位进行<em>信息隐藏</em>及提取（考虑安全性因素） 3.能够计算PSNR，分析<em>信息隐藏</em>图像质量4.完成对秘密信息的图像载体进行攻击，采用的攻击方法： jpeg压缩，resize缩放                         5....</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/utimes/article/details/19117955,BlogCommendFromQuerySearch_30"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/utimes/article/details/19117955,BlogCommendFromQuerySearch_30"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/utimes/article/details/19117955" target="_blank" title="二值图像<em>信息隐藏</em>-松子茶的专栏">二值图像<em>信息隐藏</em>-松子茶的专栏</a>
+                </dt>
+                <dd>二值图像<em>信息隐藏</em>的方法是把一个二值图像分成一系列矩形图像区域B，某个图像区域B中黑色像素的个数大于一半，则表示嵌入0,如果白色像素的个数大于一半，则表示嵌入1,但是当需要嵌入的比特与所选区域的黑白像素的比例不一致，为了达到与像素关系，刚需要修改一些像素的color.此方法的缺点是没有明确界定哪些像素可以修改以便于隐藏秘密信息，二值图像中某些像素的修改可能会引起二值图像视觉效果上的较大变化，相应的水印嵌入算法可能在较大程度上破坏图像质量。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/qq_22717679/article/details/46982303,BlogCommendFromQuerySearch_31"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/qq_22717679/article/details/46982303,BlogCommendFromQuerySearch_31"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/qq_22717679/article/details/46982303" target="_blank" title="【<em>信息隐藏</em>】MATLAB代码__LSB<em>信息隐藏</em>与提取-拖延癌患者自愈小记">【<em>信息隐藏</em>】MATLAB代码__LSB<em>信息隐藏</em>与提取-拖延癌患者自愈小记</a>
+                </dt>
+                <dd>2、
+顺序法和随机法<em>信息隐藏</em>位置分布
+
+
+   
+
+  
+
+
+CODE
+
+
+lsbord.m(顺序法嵌入)
+function hideimg=lsbord(imgfile,info,outfile)
+%读取载体图像
+img=imread(imgfile);
+%转灰度图像
+if ndims(img)==3</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/superdont/article/details/1396172,BlogCommendFromQuerySearch_32"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/superdont/article/details/1396172,BlogCommendFromQuerySearch_32"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/superdont/article/details/1396172" target="_blank" title="<em>信息隐藏</em>技术综述-我思故我在"><em>信息隐藏</em>技术综述-我思故我在</a>
+                </dt>
+                <dd><em>信息隐藏</em>技术综述蔡洪亮 李波 卢星 杨明摘要:介绍了<em>信息隐藏</em>技术的概念、模型及分类;给出了<em>信息隐藏</em>技术的五大特征;分析了两种典型的<em>信息隐藏</em>算法:时域替换技术和变换域技术;描述了<em>信息隐藏</em>在现实中主要的应用领域;指出了<em>信息隐藏</em>技术今后的发展方向。关键词：<em>信息隐藏</em>;秘密信息;隐藏算法 本文就<em>信息隐藏</em>的技术进行了综述，概述的比较全面，有一定的参考价值，下面时他的层次目录结构。1.<em>信息隐藏</em>的概念、模型及分类</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_99" data-pid="99" data-track-view='{"mod":"kp_popu_99-124","con":",,"}' data-track-click='{"mod":"kp_popu_99-124","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad33" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            placeholderId: "info_ad33",
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3539104\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/Blog_Zyx/article/details/72454032,BlogCommendFromQuerySearch_33"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/Blog_Zyx/article/details/72454032,BlogCommendFromQuerySearch_33"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/Blog_Zyx/article/details/72454032" target="_blank" title="Java三大特征--<em>封装</em>（隐藏）及高内聚低耦合的概念-Blog_Zyx的博客">Java三大特征--<em>封装</em>（隐藏）及高内聚低耦合的概念-Blog_Zyx的博客</a>
+                </dt>
+                <dd>一、内聚与耦合
+耦合性也称块间联系。指软件系统结构中各模块间相互联系紧密程度的一种度量。模块之间联系越紧密，其耦合性就越强，模块的独立性则越差。模块间耦合高低取决于模块间接口的复杂性、调用的方式及传递的信息。
+ 
+内聚性又称块内联系。指模块的功能强度的度量，即一个模块内部各个元素彼此结合的紧密程度的度量。若一个模块内各元素（语名之间、程序段之间）联系的越紧密，则它的内聚性就越高。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/qq_36891953/article/details/53423047,BlogCommendFromQuerySearch_34"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/qq_36891953/article/details/53423047,BlogCommendFromQuerySearch_34"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/qq_36891953/article/details/53423047" target="_blank" title="LSB算法BMP图片<em>信息隐藏</em>技术 c语言-RUCblake的博客">LSB算法BMP图片<em>信息隐藏</em>技术 c语言-RUCblake的博客</a>
+                </dt>
+                <dd>LSB算法是将信息的每一位隐藏到图片RGB单元的最后一位,由于一位的改变对于颜色影响不大，人的肉眼难以识别，从而达到<em>信息隐藏</em>的效果。
+具体需要了解BMP文件格式，前54个字节为图片信息，不能修改，所以从第55个字节开始进行隐藏。具体代码为：
+#include
+#include
+#include
+int judge(FILE *in,FILE *fil,int &inlen,int &fi</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/Tianma5/article/details/51299000,BlogCommendFromQuerySearch_35"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/Tianma5/article/details/51299000,BlogCommendFromQuerySearch_35"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/Tianma5/article/details/51299000" target="_blank" title="图片嵌入隐藏-大容量的<em>信息隐藏</em>算法-辰空">图片嵌入隐藏-大容量的<em>信息隐藏</em>算法-辰空</a>
+                </dt>
+                <dd>今天分享一下最近看到的一个图片嵌入隐藏的算法。
+  这是一种基于空间域的自适应多平面位的<em>信息隐藏</em>算法。该算法计算复杂度低、<em>信息隐藏</em>量大。且有实验表明在不影响图像视觉效果的前提下，其<em>信息隐藏</em>量比LSB算法大，并具有更高的安全性。该算法的主要思想是对每个像素点进行判断，根据HVS的特性，在最高非0有效位后的指定位(y)开始嵌入隐藏信息，嵌入到另一个指定位(z)为止。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/wangdan199112/article/details/13275887,BlogCommendFromQuerySearch_36"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/wangdan199112/article/details/13275887,BlogCommendFromQuerySearch_36"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/wangdan199112/article/details/13275887" target="_blank" title="软件工程之信息隐蔽与模块独立性-变是永远不变的......">软件工程之信息隐蔽与模块独立性-变是永远不变的......</a>
+                </dt>
+                <dd>最近看软工视频，老师提出了一个问题：信息隐蔽与模块独立性的联系，一开始我也不知道什么是信息隐蔽，模块独立还是略知一二，于是查了一下，自己总结了一些这二者之间的关系，与大家share!
+         首先介绍一下信息隐蔽
+         信息隐蔽是开发整体程序结构时使用的法则，即将每个程序的成分隐蔽或<em>封装</em>在一个单一的设计模块中，定义每一个模块时尽可能少地显露其内部的处理。信息隐蔽原则对提高</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/smstong/article/details/50707779,BlogCommendFromQuerySearch_37"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/smstong/article/details/50707779,BlogCommendFromQuerySearch_37"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/smstong/article/details/50707779" target="_blank" title="C/C++程序开发中实现<em>信息隐藏</em>的三种类型-smstong的成长轨迹">C/C++程序开发中实现<em>信息隐藏</em>的三种类型-smstong的成长轨迹</a>
+                </dt>
+                <dd>无论是模块化设计，还是面向对象设计，还是分层设计，实现子系统内部信息的对外隐藏都是最关键的内在要求。以本人浅显的经验，把<em>信息隐藏</em>按照程度的不同分成（1）不可见不可用（2）可见不可用（3）可见可用。1 不可见不可用就是说模块内部的变量、结构体、类定义对外部而已完全隐藏，外部对此一无所知。常用的实现方法就是利用不透明指针，请参见我的博文C语言开发函数库时利用不透明指针对外隐藏结构体细节。这种方法同样适用</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_100" data-pid="100" data-track-view='{"mod":"kp_popu_100-125","con":",,"}' data-track-click='{"mod":"kp_popu_100-125","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad38" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            placeholderId: "info_ad38",
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3539104\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/MajorDong100/article/details/78470176,BlogCommendFromQuerySearch_38"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/MajorDong100/article/details/78470176,BlogCommendFromQuerySearch_38"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/MajorDong100/article/details/78470176" target="_blank" title="深度学习在<em>信息隐藏</em>中的应用（上）-Marcovaldong的博客">深度学习在<em>信息隐藏</em>中的应用（上）-Marcovaldong的博客</a>
+                </dt>
+                <dd>博客首发至Marcovaldo’s blog (http://marcovaldong.github.io/)
+
+之前都是在实验室做项目，写代码，没有系统集中的看过paper，最近要准备开题，集中看了十几篇，全是深度学习在<em>信息隐藏</em>领域的应用与研究。这里主要是对十几篇论文做一个总结，以后会不间断更新最新读的论文。
+
+大家都学过密码学，但是可能很少有人了解<em>信息隐藏</em>。<em>信息隐藏</em>是我所在实验室的一个方向，指...</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/z44415083/3193526,BlogCommendFromQuerySearch_39"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/z44415083/3193526,BlogCommendFromQuerySearch_39"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/z44415083/3193526" target="_blank" title="<em>信息隐藏</em>技术实验教程 PDF--"><em>信息隐藏</em>技术实验教程 PDF--</a>
+                </dt>
+                <dd>本书是关于王丽娜的地<em>信息隐藏</em>技术的 实验教程 具体代码书上很多，想要的就下吧！</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/MajorDong100/article/details/78598109,BlogCommendFromQuerySearch_40"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/MajorDong100/article/details/78598109,BlogCommendFromQuerySearch_40"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/MajorDong100/article/details/78598109" target="_blank" title="深度学习在<em>信息隐藏</em>中的应用（下）-Marcovaldong的博客">深度学习在<em>信息隐藏</em>中的应用（下）-Marcovaldong的博客</a>
+                </dt>
+                <dd>上一篇主要是使用卷积神经网络来做隐写分析，这一篇主要介绍几篇使用生成对抗网络来做隐写和加密。在介绍这些工作之前，我们先来看一下什么是生成对抗网络。生成对抗网络（Generative Adversarial Network, GAN）是深度学习中一个新的网络结构，其自2014年被提出以来一直备受关注，不断有新的GAN模型或基于GAN的应用出现。GAN提出了一种不需要大量标注训练数据就能学习深度表征的方</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/utimes/article/details/18953055,BlogCommendFromQuerySearch_41"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/utimes/article/details/18953055,BlogCommendFromQuerySearch_41"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/utimes/article/details/18953055" target="_blank" title="图像<em>信息隐藏</em>与水印-松子茶的专栏">图像<em>信息隐藏</em>与水印-松子茶的专栏</a>
+                </dt>
+                <dd>图像<em>信息隐藏</em>与数字水印领域研究最多和最早的一种载体，近年来，比较成熟的隐藏和水印算法都是基于图像载体。即：在时域隐藏方法：LSB图像<em>信息隐藏</em>，二值图像<em>信息隐藏</em>，其次，在变换域隐藏方法：DCT域图像水印。<em>信息隐藏</em> (Information Hiding)主要由下述两部分组成 :(1 )信息嵌入算法 ，它利用密钥来实现秘密信息的隐藏 。 (2 )隐蔽信息检测 /提取算法 (检测器 ) ，它利用密钥从隐蔽载体中检测 /恢复出秘密信息 。在密钥未知的前提下 ，第三者很难从隐秘载体中得到或删除 ，甚至发现秘密信息 。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/ShawnHoo/article/details/1738073,BlogCommendFromQuerySearch_42"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/ShawnHoo/article/details/1738073,BlogCommendFromQuerySearch_42"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/ShawnHoo/article/details/1738073" target="_blank" title="基于DCT变换的<em>信息隐藏</em>(数字水印)嵌入算法的设计(Matlab)-ShawnHoo的专栏">基于DCT变换的<em>信息隐藏</em>(数字水印)嵌入算法的设计(Matlab)-ShawnHoo的专栏</a>
+                </dt>
+                <dd>隐藏信息嵌入程序，老师写的！ %------------------------------------------------------------------%%     基于DCT变换的<em>信息隐藏</em>(数字水印)嵌入算法的设计____2007.06.19     %%                                                             </dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_101" data-pid="101" data-track-view='{"mod":"kp_popu_101-126","con":",,"}' data-track-click='{"mod":"kp_popu_101-126","con":",,"}'><!--
+<script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+-->
+<div id="info_ad43" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            placeholderId: "info_ad33",
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3578438\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_19703327/10146757,BlogCommendFromQuerySearch_43"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_19703327/10146757,BlogCommendFromQuerySearch_43"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/qq_19703327/10146757" target="_blank" title="<em>信息隐藏</em>课件+试卷-qq_19703327"><em>信息隐藏</em>课件+试卷-qq_19703327</a>
+                </dt>
+                <dd>东南大学2017-2018<em>信息隐藏</em>与内容安全课件和试卷只有一学年</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/qq375354161/4647190,BlogCommendFromQuerySearch_44"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/qq375354161/4647190,BlogCommendFromQuerySearch_44"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/qq375354161/4647190" target="_blank" title="一种基于多小波变换的<em>信息隐藏</em>算法--">一种基于多小波变换的<em>信息隐藏</em>算法--</a>
+                </dt>
+                <dd>一种基于多小波变换的<em>信息隐藏</em>算法、多小波变换</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_42943280/10597855,BlogCommendFromQuerySearch_45"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_42943280/10597855,BlogCommendFromQuerySearch_45"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/qq_42943280/10597855" target="_blank" title="可逆<em>信息隐藏</em>-qq_42943280">可逆<em>信息隐藏</em>-qq_42943280</a>
+                </dt>
+                <dd>可逆<em>信息隐藏</em>，文中详细介绍了相关信息嵌入以及提取的详细过程。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/langjiwuya/3358376,BlogCommendFromQuerySearch_46"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/langjiwuya/3358376,BlogCommendFromQuerySearch_46"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/langjiwuya/3358376" target="_blank" title="<em>信息隐藏</em>实验报告、<em>信息隐藏</em>--"><em>信息隐藏</em>实验报告、<em>信息隐藏</em>--</a>
+                </dt>
+                <dd>包括五个实验：LSB<em>信息隐藏</em>、图像DCT域<em>信息隐藏</em>、LSB隐写分析、W-SVD数字水印、基于混沌细胞自动机数字水印，没有代码</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/neko233/10129253,BlogCommendFromQuerySearch_47"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/neko233/10129253,BlogCommendFromQuerySearch_47"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/neko233/10129253" target="_blank" title="图像DCT域<em>信息隐藏</em>实验-neko233">图像DCT域<em>信息隐藏</em>实验-neko233</a>
+                </dt>
+                <dd><em>信息隐藏</em>技术实验,MATLAB代码，1、 编写两个函数，分别用来处理三点法的嵌入和提取操作。（适应任意载体图像。）2、分析隐蔽载体在JPEG压缩条件下的健壮参数a与隐藏鲁棒性的关系 （两点法）。</dd>
+              </dl>
+                  <dl class="bbs_feed bbs_feed_ad_box" style="padding-bottom: 0">
+                    <div id="kp_box_102" data-pid="102" data-track-view='{"mod":"kp_popu_102-127","con":",,"}' data-track-click='{"mod":"kp_popu_102-127","con":",,"}'><script src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<div id="info_ad48" class="mediav_ad" ></div>
+<script>
+        NEWS_FEED({
+            w: 920,
+            h: 66,
+            showid : 'wc4SIC',
+            placeholderId: "info_ad48",
+            inject : 'define',
+             onFail : function (){
+                document.writeln("<script type=\"text\/javascript\">(function() {var s = \"_\" + Math.random().toString(36).slice(2);document.write(\'<div style=\"\" id=\"\' + s + \'\"><\/div>\');(window.slotbydup = window.slotbydup || []).push({id: \"u3578468\",container:  s});})();<\/script>");},
+            define : {
+                displayImage : true,
+                imagePosition : 'right',
+                imageBorderRadius : 10,
+                imageWidth: 80,
+                imageHeight: 60,
+                imageFill : 'clip',
+                displayTitle : true,
+                titleFontSize: 16,
+                titleFontColor: '#3d3d3d',
+                titleFontFamily : 'Microsoft Yahei',
+                titleFontWeight: 'normal',
+                titlePaddingTop : 0,
+                titlePaddingRight : 0,
+                titlePaddingBottom : 13,
+                titlePaddingLeft : 0,
+                displayDesc : true,
+                descFontSize: 14,
+                descFontColor: '#8e959a',
+                descFontFamily : 'Microsoft Yahei',
+                paddingTop : 5,
+                paddingRight : 0,
+                paddingBottom : 5,
+                paddingLeft : 0,
+                backgroundColor: '#fff',
+                hoverColor: '#f44444'
+            }
+        }) 
+</script></div>
+                  </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/u010119868/article/details/17419557,BlogCommendFromQuerySearch_48"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/u010119868/article/details/17419557,BlogCommendFromQuerySearch_48"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/u010119868/article/details/17419557" target="_blank" title="javascript 设计模式 读书笔记 <em>封装</em>和<em>信息隐藏</em>-我仅仅是一个Coder">javascript 设计模式 读书笔记 <em>封装</em>和<em>信息隐藏</em>-我仅仅是一个Coder</a>
+                </dt>
+                <dd>/*================================== 对象<em>封装</em> =============================== 
+  			/*《javascript 设计模式》 读书笔记 第三章 “<em>封装</em>和<em>信息隐藏</em>” */
+			/* 涉及概念：私有属性、方法; 特权属性、方法; 静态属性、方法;*/
+		   	
+			/*=======================方式一</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/Augusdi/article/details/16354981,BlogCommendFromQuerySearch_49"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/Augusdi/article/details/16354981,BlogCommendFromQuerySearch_49"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/Augusdi/article/details/16354981" target="_blank" title="音频<em>信息隐藏</em>技术研究-Augusdi的专栏">音频<em>信息隐藏</em>技术研究-Augusdi的专栏</a>
+                </dt>
+                <dd>传统的保密通信技术主要是以密码学为基础，将待传输信息进行充分置乱，使得非法用户无法正确获取原文。与此不同，<em>信息隐藏</em>作为近年迅速发展起来的一种保密通信技术，它首先将待传输信息嵌入到诸如音频、视频、文件等载体中，使得非法第三方不易觉察到秘密信息的存在，然后通过携密载体的传送，实现秘密信息的保密传输。在这里，为了满足不易引起非法第三方注意这一要求，嵌入信息后的携密载体应对听觉、视觉等人类知觉系统具备一定</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/neko233/10129257,BlogCommendFromQuerySearch_50"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/neko233/10129257,BlogCommendFromQuerySearch_50"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/neko233/10129257" target="_blank" title="二值图像的<em>信息隐藏</em>-neko233">二值图像的<em>信息隐藏</em>-neko233</a>
+                </dt>
+                <dd>1.用MATLAB函数实现二值图像<em>信息隐藏</em>2.用MATLAB函数实现二值图像隐藏信息的提取3. 分析阈值R0，R1 以及健壮参数λ对实验结果的影响</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/xiayang05/article/details/5863151,BlogCommendFromQuerySearch_51"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/xiayang05/article/details/5863151,BlogCommendFromQuerySearch_51"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/xiayang05/article/details/5863151" target="_blank" title="有关<em>封装</em>和<em>信息隐藏</em>的误区(转)-流水不争先">有关<em>封装</em>和<em>信息隐藏</em>的误区(转)-流水不争先</a>
+                </dt>
+                <dd>http://blog.csdn.net/program_think/archive/2010/08/29/5846881.aspx  上次介绍Python的面对对象特性
+
+，其中扯到了<em>封装</em>（Encapsulation）等概念。当时为了不跑题，没有深入聊这些概念。考虑到很多开发人员对这些概念，经常混淆不清。今天再专门来说一下。
+
+　　★<em>封装</em>
+
+　　◇什么是<em>封装</em>？
+
+　　从字面意思来看，<em>封装</em>就是把一</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/kbh1983/article/details/7776428,BlogCommendFromQuerySearch_52"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/kbh1983/article/details/7776428,BlogCommendFromQuerySearch_52"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/kbh1983/article/details/7776428" target="_blank" title="javascript设计模式--<em>封装</em>和<em>信息隐藏</em>（上）-下一站永远的专栏">javascript设计模式--<em>封装</em>和<em>信息隐藏</em>（上）-下一站永远的专栏</a>
+                </dt>
+                <dd>今天博文关注的是javascript中的<em>封装</em>，文章内容来自《pro javascript design patterns》（有兴趣的朋友可以直接去下）和自己对这一问题的理解。rn　　本文分上下两部分，上部讲基本模式（basic patterns）：完全暴露法，下划线标记法和使用闭包；下部讲高级模式（Advanced Patterns），如何实现静态方法和属性，常量还有其他一些知识点。rnrn　　封</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/iteye_3224/article/details/82106310,BlogCommendFromQuerySearch_53"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/iteye_3224/article/details/82106310,BlogCommendFromQuerySearch_53"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/iteye_3224/article/details/82106310" target="_blank" title="《JavaScirpt设计模式》(2)——<em>封装</em>和<em>信息隐藏</em>-网站开发初中级代码参考-转载">《JavaScirpt设计模式》(2)——<em>封装</em>和<em>信息隐藏</em>-网站开发初中级代码参考-转载</a>
+                </dt>
+                <dd>
+
+   1. 简介：
+
+    <em>封装</em>是面向对象设计的基石，<em>封装</em>是什么，<em>封装</em>有何用，这些常识性的问题在这里不做介绍。尽管JS是一种面向对象的语言，但是它不具备用以将成员声明为公用或私用的任何内置机制。与上篇讲述的接口一样，我们将自己想办法实现这种特性。这里主要利用了JS的闭包。什么是闭包，这里也不作讨论，这不是一个讨论JS语法的总结。
+
+
+
+  2.JS创建自定义对象的基本方法
+...</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/hanyingshuai/8644731,BlogCommendFromQuerySearch_54"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/hanyingshuai/8644731,BlogCommendFromQuerySearch_54"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/hanyingshuai/8644731" target="_blank" title="<em>信息隐藏</em>与数字水印实验教程--"><em>信息隐藏</em>与数字水印实验教程--</a>
+                </dt>
+                <dd><em>信息隐藏</em>与数字水印实验教程</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/a568277043/2223427,BlogCommendFromQuerySearch_55"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/a568277043/2223427,BlogCommendFromQuerySearch_55"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/a568277043/2223427" target="_blank" title="《<em>信息隐藏</em>技术实验教程》配套MATLAB源码！-小蚂蚁的大象园地">《<em>信息隐藏</em>技术实验教程》配套MATLAB源码！-小蚂蚁的大象园地</a>
+                </dt>
+                <dd>《<em>信息隐藏</em>技术实验教程》配套MATLAB源码！对于学习<em>信息隐藏</em>和MATLAB都有很大帮助！</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/libohuiyuan/4278149,BlogCommendFromQuerySearch_56"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/libohuiyuan/4278149,BlogCommendFromQuerySearch_56"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/libohuiyuan/4278149" target="_blank" title="王丽娜 <em>信息隐藏</em>实验教程-myscdnBlog">王丽娜 <em>信息隐藏</em>实验教程-myscdnBlog</a>
+                </dt>
+                <dd>本书是《<em>信息隐藏</em>技术与应用》的配套实验教材,主要包括图像载体的基本知识、伪随机数发生器、载体信号的时频分析、图像信息的伪装技术、时空域下的<em>信息隐藏</em>、变换域隐秘技术等内容。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/qq_24477135/article/details/51723526,BlogCommendFromQuerySearch_57"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/qq_24477135/article/details/51723526,BlogCommendFromQuerySearch_57"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/qq_24477135/article/details/51723526" target="_blank" title="<em>信息隐藏</em>LSB-风一样的自由，色彩斑斓的雨季"><em>信息隐藏</em>LSB-风一样的自由，色彩斑斓的雨季</a>
+                </dt>
+                <dd>学习别人的代码实现对音频（wav）和图像的傅里叶变换分析：
+clear
+len = 400000;
+[fn,pn] = uigetfile('*.wav' , '请选择音频文件');
+[x,fs] = wavread(strcat(pn,fn),len);
+xf = fft(x);
+f1 = [0:len-1]*fs/len;
+xff = fftshift(xf);
+h1 = floor(len</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/haochenhao/10482413,BlogCommendFromQuerySearch_58"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/haochenhao/10482413,BlogCommendFromQuerySearch_58"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/haochenhao/10482413" target="_blank" title="LSB算法实现<em>信息隐藏</em>-haochenhao">LSB算法实现<em>信息隐藏</em>-haochenhao</a>
+                </dt>
+                <dd>信息安全课的一个实验作业，要求采用LSB算法实现BMP图像中的<em>信息隐藏</em>及提取,
+写完后感觉这个算法还是蛮有意思滴~压缩包内附上实验报告，仅供各位参考~</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/a116509572/3545073,BlogCommendFromQuerySearch_59"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/a116509572/3545073,BlogCommendFromQuerySearch_59"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/a116509572/3545073" target="_blank" title="基于Internet网络协议的<em>信息隐藏</em>技术--">基于Internet网络协议的<em>信息隐藏</em>技术--</a>
+                </dt>
+                <dd>本文针对网络通信数据，分析各种数据的特征，利用网络协议的缺陷，提出基于Internet网络协议的<em>信息隐藏</em>方法。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/yanmei_yao/article/details/5960370,BlogCommendFromQuerySearch_60"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/yanmei_yao/article/details/5960370,BlogCommendFromQuerySearch_60"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/yanmei_yao/article/details/5960370" target="_blank" title="模块独立性（1）-姚艳梅 廊坊师范学院七期信息技术提高班">模块独立性（1）-姚艳梅 廊坊师范学院七期信息技术提高班</a>
+                </dt>
+                <dd>首先介绍两个概念：<em>信息隐藏</em>和局部化<em>信息隐藏</em>：使得一个模块内包含的信息（数据和过程）对于不需要这些信息的模块来说是不能访问的。局部化：是指把一些关系密切的软件元素物理地放的彼此靠近。在我们开发软件，应用模块化原理时，自然会产生的一个问题就是如何分解软件，才能得到较好的一组模块（即便于维护和修改的）呢？隐藏这时候就派上了用场。按照它设计的模块，独立的模块间仅仅交换那些为了完成系统的功能而必须交换的信息。绝大多数数据和过程对于软件的其他部分而言是隐藏的，当我们在以后修改的时候，就减少我们由于疏忽而引入的错误。而且</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/yincheng01/article/details/7072570,BlogCommendFromQuerySearch_61"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/yincheng01/article/details/7072570,BlogCommendFromQuerySearch_61"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/yincheng01/article/details/7072570" target="_blank" title="VC++信息安全编程（9）基于24位bmp位图的<em>信息隐藏</em>-尹成的技术博客">VC++信息安全编程（9）基于24位bmp位图的<em>信息隐藏</em>-尹成的技术博客</a>
+                </dt>
+                <dd><em>信息隐藏</em>指在设计和确定模块时，使得一个模块内包含的特定信息（过程或数据），对于不需要这些信息的其他模块来说，是透明的。传统的<em>信息隐藏</em>起源于古老的隐写术。如在古希腊战争中，为了安全地传送军事情报，奴隶主剃光奴隶 的头发，将情报文在奴隶的头皮上，待头发长起后再派出去传送消息。我国古代也早有以藏头诗、藏尾诗、漏格诗以及绘画等形式，将要表达的意思和“密语”隐藏在诗文或画卷中的特定位置，一般人只注意诗或画的</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/cheeseandcake/article/details/52997903,BlogCommendFromQuerySearch_62"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/cheeseandcake/article/details/52997903,BlogCommendFromQuerySearch_62"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/cheeseandcake/article/details/52997903" target="_blank" title="LSB图像<em>信息隐藏</em>实验（附源代码）-cheeseandcake的博客">LSB图像<em>信息隐藏</em>实验（附源代码）-cheeseandcake的博客</a>
+                </dt>
+                <dd>LSB图像<em>信息隐藏</em> 
+1.掌握对图像的基本操作。
+2.能够用 LSB 算法对图像进行<em>信息隐藏</em>
+3.能够用 LSB 提取算法提取隐藏进图像的信息
+4.能够反映 jpeg 压缩率与误码率之间的关系 
+三、【实验过程】
+实验算法 1：<em>信息隐藏</em> 
+实验算法2：信息提取 
+实验算法3：图片压缩率与误码率关系</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/utimes/article/details/18953829,BlogCommendFromQuerySearch_63"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/utimes/article/details/18953829,BlogCommendFromQuerySearch_63"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/utimes/article/details/18953829" target="_blank" title="LSB图像<em>信息隐藏</em>-松子茶的专栏">LSB图像<em>信息隐藏</em>-松子茶的专栏</a>
+                </dt>
+                <dd>替换技术就是利用人的感观系统对特定的随机noise不敏感原理，通过使用秘密信息比特替换随机noise，从而实现<em>信息隐藏</em>。图像高位平面对图像感官质量起主要作用，去除图像最低几个位平面并不会造成画面质量的明显下降。利用这个原理可用水印信息替代载体图像低位平面以实现信息嵌入。本算法选用最低位平面来嵌入水印信息。最低位平面对图像的视觉效果影响最轻微，但很容易受noise影响和攻击，可采用冗余嵌入的方式来增强robustness加以解决，即在一个区域中嵌入相同的信息，提取时根据此区域中的所有像素判断。在此，贴出隐藏算</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/sinat_36742186/article/details/82081367,BlogCommendFromQuerySearch_64"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/sinat_36742186/article/details/82081367,BlogCommendFromQuerySearch_64"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/sinat_36742186/article/details/82081367" target="_blank" title="<em>信息隐藏</em>原理及应用课程笔记-Hi,你好"><em>信息隐藏</em>原理及应用课程笔记-Hi,你好</a>
+                </dt>
+                <dd>引言
+
+三个领域：隐写术；数字水印；隐蔽通道； 
+隐写术：看不见的墨水；字母隐藏； 
+数字水印：讲标识信息嵌入载体，可见或者不可见。
+
+
+
+水印系统的指标
+
+
+不可感知性
+鲁棒性
+安全性
+安全性
+秘钥的唯一性
+嵌入的有效性
+#
+
+
+<em>信息隐藏</em>的模型
+
+
+Simmons模型
+通信系统模型分析
+隐写术的安全模型分析
+基于通信的水印模型
+感知模型
+
+
+
+
+<em>信息隐藏</em>算法
+
+
+位平面算法
+嵌入算法
+调色板算法...</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/zznieyanlong1989/4561052,BlogCommendFromQuerySearch_65"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/zznieyanlong1989/4561052,BlogCommendFromQuerySearch_65"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/zznieyanlong1989/4561052" target="_blank" title="基于DCT的<em>信息隐藏</em>实验--">基于DCT的<em>信息隐藏</em>实验--</a>
+                </dt>
+                <dd>1、首先将文件夹picture复制到D盘下
+2、打开文件夹：基于DCT的<em>信息隐藏</em>实验。
+3、运行DCT.m  实现水印的嵌入，并计算嵌入水印后图像的PSNR。
+4、运行DCTExtract.m  测试鲁棒性：将经过攻击后的图像读入，检测误比特率。
+攻击测试实验：原始图像：lena.jpg
+水印图像：cuc.jpg
+嵌入水印的图像：Watermarking/DCTWm.bmp
+经过加噪声攻击后的图像存在文件夹Noise中
+经过JPEG压缩攻击后的图像存在文件夹JPEG中
+经过旋转攻击后的图像存在文件夹Rotation中</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/gzliu07/9416624,BlogCommendFromQuerySearch_66"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/gzliu07/9416624,BlogCommendFromQuerySearch_66"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/gzliu07/9416624" target="_blank" title="基于同态公钥加密系统的图像可逆<em>信息隐藏</em>算法-gzliu07">基于同态公钥加密系统的图像可逆<em>信息隐藏</em>算法-gzliu07</a>
+                </dt>
+                <dd>基于同态公钥加密系统的图像可逆<em>信息隐藏</em>算法，图像加密</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/java169/article/details/2476085,BlogCommendFromQuerySearch_67"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/java169/article/details/2476085,BlogCommendFromQuerySearch_67"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/java169/article/details/2476085" target="_blank" title="一个很好解释java的面向对象及<em>信息隐藏</em>的模型   -java专栏">一个很好解释java的面向对象及<em>信息隐藏</em>的模型   -java专栏</a>
+                </dt>
+                <dd>	google_ad_client = "pub-8800625213955058";/* 336x280, 创建于 07-11-21 */google_ad_slot = "0989131976";google_ad_width = 336;google_ad_height = 280;//text/java</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/zhaolong12323/10350897,BlogCommendFromQuerySearch_68"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/zhaolong12323/10350897,BlogCommendFromQuerySearch_68"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/zhaolong12323/10350897" target="_blank" title="<em>信息隐藏</em>技术实验教程-zhaolong12323"><em>信息隐藏</em>技术实验教程-zhaolong12323</a>
+                </dt>
+                <dd><em>信息隐藏</em>技术实验教程<em>信息隐藏</em>技术实验教程<em>信息隐藏</em>技术实验教程</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/darwangce/article/details/5640979,BlogCommendFromQuerySearch_69"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/darwangce/article/details/5640979,BlogCommendFromQuerySearch_69"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/darwangce/article/details/5640979" target="_blank" title="Visual C＋＋图片文件中的<em>信息隐藏</em>和还原的设计-darwangce的专栏">Visual C＋＋图片文件中的<em>信息隐藏</em>和还原的设计-darwangce的专栏</a>
+                </dt>
+                <dd>本毕业设计将密码编码学和<em>信息隐藏</em>技术相结合〖本文来自论文路上，www.lw63.com,专业毕业设计〗并通过人眼的视觉冗余来实现对24位位图图片文件的<em>信息隐藏</em>和还原。本系统是基于Windows XP环境下，通过Visual C＋＋6.0开发的。经测试结果表明：通过该最低有效位（LSB）算法，能够实现在一副比如（40×40，4.74KB）的24位位图中隐藏600个字节的信息，并且，图片隐藏信息的能力与它自身的大小成正比。而通信双方只能在输入正确密钥的情况下才能从载体图片中提取出正确的秘密信息；否则</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/sheepgis/1437990,BlogCommendFromQuerySearch_70"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/sheepgis/1437990,BlogCommendFromQuerySearch_70"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/sheepgis/1437990" target="_blank" title="基于图像的<em>信息隐藏</em>两个算法(LSB和DCT）的实现--">基于图像的<em>信息隐藏</em>两个算法(LSB和DCT）的实现--</a>
+                </dt>
+                <dd>基于文本与图像(BMP和JPG格式)的<em>信息隐藏</em>算法(LSB,DCT)的实现,调试无误</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/zhuifengshaonian12/4780121,BlogCommendFromQuerySearch_71"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/zhuifengshaonian12/4780121,BlogCommendFromQuerySearch_71"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/zhuifengshaonian12/4780121" target="_blank" title="matlab 图片中隐藏信息以及提取的程序代码.zip-追风少年yym">matlab 图片中隐藏信息以及提取的程序代码.zip-追风少年yym</a>
+                </dt>
+                <dd>这是一个往图片中添加隐藏信息以及从图片中提取出隐藏信息的matlab程序代码</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_40836776/10141831,BlogCommendFromQuerySearch_72"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/qq_40836776/10141831,BlogCommendFromQuerySearch_72"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/qq_40836776/10141831" target="_blank" title="<em>信息隐藏</em> 二值图像的隐藏 MD5-qq_40836776"><em>信息隐藏</em> 二值图像的隐藏 MD5-qq_40836776</a>
+                </dt>
+                <dd><em>信息隐藏</em>实验：二值图像的隐藏 的源代码，包含书上的代码以及MD5.mexw64,实测可运行</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/WilsonSong1024/article/details/80318006,BlogCommendFromQuerySearch_73"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/WilsonSong1024/article/details/80318006,BlogCommendFromQuerySearch_73"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/WilsonSong1024/article/details/80318006" target="_blank" title="基于DCT变换（变换域）实现<em>信息隐藏</em>(数字水印)原理详解及matlab实现-WilsonSong1024的博客">基于DCT变换（变换域）实现<em>信息隐藏</em>(数字水印)原理详解及matlab实现-WilsonSong1024的博客</a>
+                </dt>
+                <dd>主要就是实现了数字水印的嵌入提取和在不同攻击如旋转剪切噪声等下的提取效果差异的比对1 DCT变换的原理2  DCT变换的特点    在基于DCT的变换编码中，图像是先经分块（8×8或16×16）后再经DCT，这种变换是局部的，只反映了图像某一部分的信息。当然也可以对整幅图像的特点，但是运算速度比分块DCT要慢。图像经DCT后，得到的DCT图像有三个特点：      (1). 系数值全部集中到0值附...</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/csdn_moming/article/details/50936687,BlogCommendFromQuerySearch_74"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/csdn_moming/article/details/50936687,BlogCommendFromQuerySearch_74"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/csdn_moming/article/details/50936687" target="_blank" title="利用LSB算法隐藏文字信息的MATLAB实现-Moming">利用LSB算法隐藏文字信息的MATLAB实现-Moming</a>
+                </dt>
+                <dd>LSB算法——隐藏文字信息LSB（Least Significant Bit）最低有效位，指二进制中最低位数值。 
+详见WiKi：https://en.wikipedia.org/wiki/Least_significant_bit隐写术隐写术是一种关于<em>信息隐藏</em>的技术，通常利用位图的RGB三种颜色值（0~255）在微小改变的情况下难以被人眼察觉的特点。每种颜色值都可以用8位二进制来表示，而最低有效位</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/luojj26/article/details/50762720,BlogCommendFromQuerySearch_75"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/luojj26/article/details/50762720,BlogCommendFromQuerySearch_75"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/luojj26/article/details/50762720" target="_blank" title="c++中<em>信息隐藏</em>的实现-longj&#x27;s coding workbench">c++中<em>信息隐藏</em>的实现-longj&#x27;s coding workbench</a>
+                </dt>
+                <dd>虽然将数据和函数捆绑在一起很有好处，并使得库容易使用，因为这可以通过隐藏名字防止名字冲突，但是，还有大量的工作可以使c++程序设计更加安全。
+第3章： 隐藏实现</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/jy0902/4890317,BlogCommendFromQuerySearch_76"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/jy0902/4890317,BlogCommendFromQuerySearch_76"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/jy0902/4890317" target="_blank" title="javascript 设计模式-码农一个">javascript 设计模式-码农一个</a>
+                </dt>
+                <dd>javascript设计模式  js<em>封装</em>、<em>信息隐藏</em>、方法链、继承。
+23种模式。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/a710123a/3506563,BlogCommendFromQuerySearch_77"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/a710123a/3506563,BlogCommendFromQuerySearch_77"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/a710123a/3506563" target="_blank" title="javascript设计模式 001-冰糖710">javascript设计模式 001-冰糖710</a>
+                </dt>
+                <dd>javascript 设计模式
+第1章（富有表现力的JavaScript）
+第2章 (接口)
+第3章 (<em>封装</em>和<em>信息隐藏</em>)
+..........</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/blazer12345/8374239,BlogCommendFromQuerySearch_78"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/blazer12345/8374239,BlogCommendFromQuerySearch_78"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/blazer12345/8374239" target="_blank" title="图像<em>信息隐藏</em>DCT嵌入算法Matlab程序--">图像<em>信息隐藏</em>DCT嵌入算法Matlab程序--</a>
+                </dt>
+                <dd>数字水印进行DCT嵌入算法，直接可以用于DCT频域运算。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/sandynana/3424466,BlogCommendFromQuerySearch_79"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/sandynana/3424466,BlogCommendFromQuerySearch_79"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/sandynana/3424466" target="_blank" title="<em>信息隐藏</em>实验报告以及原程序-shenyiniao"><em>信息隐藏</em>实验报告以及原程序-shenyiniao</a>
+                </dt>
+                <dd>共五个实验：shiyLSB图像<em>信息隐藏</em> 基于扩频的水印算法 基于量化的图像水印算法 基于回声的音频水印算法 Stirmark软件使用。
+每个实验都给出了目的、要求、算法、源程序和实验运行结果</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/conepoint/article/details/50635470,BlogCommendFromQuerySearch_80"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/conepoint/article/details/50635470,BlogCommendFromQuerySearch_80"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/conepoint/article/details/50635470" target="_blank" title="Qt核心剖析：<em>信息隐藏</em>-conepoint的博客">Qt核心剖析：<em>信息隐藏</em>-conepoint的博客</a>
+                </dt>
+                <dd>转载自 http://devbean.blog.51cto.com/448512/325581
+
+
+如果你阅读了 Qt 的源代码，你会看到一堆奇奇怪怪的宏，例如 Q_D，Q_Q。我们的Qt源码之旅就从理解这些宏说起。
+
+下面先看一个C++的例子。
+class Person     {     public:         Person(){}         ~Person(){}</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/csdn_moming/article/details/50950497,BlogCommendFromQuerySearch_81"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/csdn_moming/article/details/50950497,BlogCommendFromQuerySearch_81"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/csdn_moming/article/details/50950497" target="_blank" title="利用LSB算法隐藏图片信息的MATLAB实现-Moming">利用LSB算法隐藏图片信息的MATLAB实现-Moming</a>
+                </dt>
+                <dd>前一篇博客中介绍了利用LSB算法隐藏文字信息的MATLAB实现： 
+http://blog.csdn.net/csdn_moming/article/details/50936687 
+在此基础上，下面介绍利用LSB算法隐藏图片信息的MATLAB实现。补充说明
+图片数据量较大，一个1920×10801920 \times 1080 的图片就有 6912000 个RGB值需要储存
+依旧利用之前改进的算</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/small_dong_0_o/10433806,BlogCommendFromQuerySearch_82"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/small_dong_0_o/10433806,BlogCommendFromQuerySearch_82"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/small_dong_0_o/10433806" target="_blank" title="<em>信息隐藏</em>——Python语言幻方置乱实现图片预处理-small_dong_0_o"><em>信息隐藏</em>——Python语言幻方置乱实现图片预处理-small_dong_0_o</a>
+                </dt>
+                <dd><em>信息隐藏</em>作业。使用python实现幻方置乱，里面的幻方函数生成是从借鉴的别人的，压缩包的内容是PYcharm的工程文件。其中，TPYCL.py是运行的程序，里面的幻方生成为奇数，若想要奇偶均可，可以使用里面另外一个幻方生成.py文件进行替换。注意，里面的a.jpg不能太大，不然耗时会特别长；TPYCL.py里面对图片仅进行了20次置乱，你可以随意更改。置乱n²次后，图片恢复到原来的状态。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/dreamwbt/article/details/53224309,BlogCommendFromQuerySearch_83"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/dreamwbt/article/details/53224309,BlogCommendFromQuerySearch_83"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/dreamwbt/article/details/53224309" target="_blank" title="<em>信息隐藏</em>-笃行淡言"><em>信息隐藏</em>-笃行淡言</a>
+                </dt>
+                <dd>此方式可以应用于隐私文件的隐藏，相比较加密，这种方式具有很强的隐蔽性，即使有人想用软件破解密码，一般是不会找不到源文件的，这为隐私安全提供了很强的隐秘性。在此基础上还可以结合高级加密技术先将文件进行深度加密，再用此方法进行隐藏，这样你的隐私文件几乎是除你之外不会有人找到的。当然这些看似高强度的保密性只是我在现有基础上的一些浅见，具体性能有待后期继续在矛盾中探索。
+
+
+原理论知识：
+步骤：</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/u011406900/5780777,BlogCommendFromQuerySearch_84"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/u011406900/5780777,BlogCommendFromQuerySearch_84"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/u011406900/5780777" target="_blank" title="基于文本的<em>信息隐藏</em>技术-遇见你需要运气">基于文本的<em>信息隐藏</em>技术-遇见你需要运气</a>
+                </dt>
+                <dd>由于所包含的信息冗余量少而难以在其中隐藏信息。提出了两种较实用的文本<em>信息隐藏</em>技术,取得了较好的<em>信息隐藏</em>效果</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/wujianddk/732110,BlogCommendFromQuerySearch_85"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/wujianddk/732110,BlogCommendFromQuerySearch_85"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/wujianddk/732110" target="_blank" title="《<em>信息隐藏</em>技术》pdf图书--">《<em>信息隐藏</em>技术》pdf图书--</a>
+                </dt>
+                <dd>一本关于<em>信息隐藏</em>的书。
+一本关于<em>信息隐藏</em>的书。
+一本关于<em>信息隐藏</em>的书。
+一本关于<em>信息隐藏</em>的书。
+一本关于<em>信息隐藏</em>的书。</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/moyumoyu/article/details/8780380,BlogCommendFromQuerySearch_86"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/moyumoyu/article/details/8780380,BlogCommendFromQuerySearch_86"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/moyumoyu/article/details/8780380" target="_blank" title="基于最低有效位 把<em>信息隐藏</em>到图片中-moyumoyu的专栏">基于最低有效位 把<em>信息隐藏</em>到图片中-moyumoyu的专栏</a>
+                </dt>
+                <dd>呵呵，当然算法不是我的，是在一次无意间看关于信息安全方面的书籍时，看到“最低有效位隐藏信息”这个名词。
+于是在网上查，论文比较多，但都要收费，偶尔有几篇在前面的有一点信息。
+于是就了下文：
+其实讲了之后就非常简单，大家知道，图像是由一个一个像素组成的，每个像素又是由R（红）G（绿）B（蓝）三个亮度分量组成，每个分量又是一个8位二进数。
+这个算法其实就是把信息按位替换这三个分量的最低几位，而</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://download.csdn.net/download/zhang3213986/8259013,BlogCommendFromQuerySearch_87"}' data-track-click='{"mod":"popu_645","con":",https://download.csdn.net/download/zhang3213986/8259013,BlogCommendFromQuerySearch_87"}'>
+                <dt>
+                  <a href="https://download.csdn.net/download/zhang3213986/8259013" target="_blank" title="BMP图像中的LSB<em>信息隐藏</em>方法-绝对计划">BMP图像中的LSB<em>信息隐藏</em>方法-绝对计划</a>
+                </dt>
+                <dd>任选一个24位的BMP图片文件 
+用二进制文件方式打开这个文件，顺序读取每个像素的颜色 
+将字符串的ASCII码顺序替换掉这个图像文件中每个像素的每个颜色分量的LSB位 
+保存修改后的图像文件 
+
+提取部分：
+用二进制文件方式打开隐藏了信息的图片文件
+顺序读取每个像素的颜色中每个分量的LSB位
+将提取的LSB位恢复为字符串显示出来</dd>
+              </dl>
+              <dl class="bbs_feed" data-track-view='{"mod":"popu_645","con":",https://blog.csdn.net/u014071802/article/details/25210903,BlogCommendFromQuerySearch_88"}' data-track-click='{"mod":"popu_645","con":",https://blog.csdn.net/u014071802/article/details/25210903,BlogCommendFromQuerySearch_88"}'>
+                <dt>
+                  <a href="https://blog.csdn.net/u014071802/article/details/25210903" target="_blank" title="matlab 实现利用直方图算法实现的可逆数据隐藏-u014071802的专栏">matlab 实现利用直方图算法实现的可逆数据隐藏-u014071802的专栏</a>
+                </dt>
+                <dd>利用直方图实现的可逆数据的隐藏算饭简单</dd>
+              </dl>
+            <div class="dl_no_more" style="font-size:14px; color:red; text-align:center;padding-top:10px; ">我们是很有底线的</div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="right-box" id="rightList">
+    <div class="flex-box">
+      <div class="third-list-box" id="thirdList">
+        <div class="pop-right">
+        </div>
+        <script src="https://g.csdnimg.cn/recommend/1.1.7/recommend.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                window.csdn.recommendSide({
+                    contentBox: "recommend",
+                    postBox: $(".pop-right"),
+                    query:'封装与信息隐藏的区别',
+                    popu:'728',
+                    size:50
+                });
+            });
+        </script>
+      </div>
+      <div class="persion_article"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function(){
+      var rightList = $("#rightList");
+      var rightListH = rightList.height();
+      var beginWidth = $("#bbs_title_bar").width();
+      var beginLeft = $("#bbs_title_bar").offset().left;
+      var beginTop = $("#bbs_title_bar").offset().top;
+      var tttop = beginTop + rightListH - $(window).height();
+
+      $(window).resize(function(){
+          beginLeft = $("#bbs_title_bar").offset().left;
+          beginTop = $("#bbs_title_bar").offset().top;
+          fixedThird()
+      })
+      $(window).scroll(function(){
+          fixedThird()
+      })
+      function fixedThird(){
+          rightListH = rightList.height();
+          tttop = beginTop + rightListH - $(window).height();
+          if($(window).scrollTop() >= tttop){
+            var left = beginLeft + beginWidth;
+            rightList.css({
+                'position':'fixed',
+                'bottom':'0px',
+                'left':left+'px',
+                'margin-top': '0px'
+            })
+          }else{
+              rightList.removeAttr('style')
+          }
+      }
+  });
+</script>
+
+
+
+<!-- 对联广告 -->
+<div id="ad_left" style="display:none">
+  <div>
+    <ins data-revive-zoneid="56" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<script type="text/javascript">  
+  $(function(){
+      if ($(parent.window).width() >= 1280) {
+          parent.$('#ad_left').show();
+      }
+  });
+</script>
+  </div>
+</div>
+<div id="ad_right" style="display:none">
+  <div>
+    <ins data-revive-zoneid="57" data-revive-id="8c38e720de1c90a6f6ff52f3f89c4d57"></ins>
+<script type="text/javascript">    
+    $(function(){
+        if ($(parent.window).width() >= 1280) {
+            parent.$('#ad_right').show();
+        }
+    });
+</script>
+  </div>
+</div>
+
+<script>
+  $(function(){
+    window.onresize = function(){
+      if($(parent.window).width() <= 1280){
+        $('#ad_right').hide();
+        $('#ad_left').hide();
+      } else {
+          $('#ad_right').show();
+          $('#ad_left').show();
+      }
+    };
+      if ($(parent.window).width() >= 1280) {
+          $('#ad_right').show();
+          $('#ad_left').show();
+      }
+  });
+
+</script>
+
+
+
+
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/apps/bbsMin-b20d2fdb42.js"></script>
+  <link rel="stylesheet" href="//csdnimg.cn/pubfooter/css/pub_footer_1.0.3.css">
+  <script src="//csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript"></script>
+  
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+ 
+</style>
+
+    <script>
+      $(function(){
+          CSDN.activeAttLink('.user_material_bg');
+          posts_page_js._form_page();
+      });
+  </script>
+    <div id="bbsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <h4 id="bbsModalLabel" class="modal-title">New message</h4>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+  <script data-isfootertrack="false" src="//csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/icon/iconfont_common-a4b5db6e1f.js"></script>
+  <script type="text/javascript" src="https://csdnimg.cn/release/bbs/dist/js/apps/markitUpJs-715144984b.js"></script>
+  <script type="text/javascript" src="//g.csdnimg.cn/preview-img/1.0.0/preview-img.js"></script>
+  <script src="//g.csdnimg.cn/login-box/1.0.2/login-box.js?20181116" type="text/javascript"></script>
+
+  <script language="javascript" type="text/javascript" src="https://ads.csdn.net/js/async_new.js"></script>
+  <script src="https://g.csdnimg.cn/track/1.2.1/track.js" type="text/javascript"></script>
+  <script src="https://g.csdnimg.cn/check-adblock/1.0.8/check-adblock.js" type="text/javascript"></script>
+  <script src="https://g.csdnimg.cn/login-box/1.0.2/login-box.js?20181116" type="text/javascript"></script>
+</body>
+</html>

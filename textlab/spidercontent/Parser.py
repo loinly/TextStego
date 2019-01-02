@@ -1,31 +1,22 @@
 #! python3
 # -*- coding:utf-8 -*-
 import re
-import fileinput
-import config
-
-'''
-解析页面,提取文字内容
-:return:
-'''
 
 
 class Htmlparse(object):
+    """
+    解析网页, 提取url, 中文内容
+    """
 
     @staticmethod
     def parse(filename):
-        page_url = ''
         text = ''
         if filename is None:
             return
-        for line in fileinput.input(
-            filename, openhook=fileinput.hook_encoded(
-                config.encoding)):
-            if fileinput.isfirstline():
-                page_url = line
-                continue
-            text += line
-        fileinput.close()
+        with open(filename, 'r+', encoding='utf-8') as fr:
+            page_url = fr.readline()
+            for line in fr.readlines():
+                text += line
         content = Htmlparse._util(text)
         return page_url, content
 
@@ -42,9 +33,7 @@ class Htmlparse(object):
 
 
 if __name__ == '__main__':
-    pass
-    h = Htmlparse()
-    filenames = r'F:\LabData\NetBigData\spiders\spiderhtml\隐藏_信息_网络_互联网_成功率_技术_利用\51_48_135_墨尔本理工大学开发光线角动量复用技术大幅提高光纤传输容量.html'
-    url, contents = h.parse(filenames)
+    url, contents = Htmlparse.parse('test.html')
     print(url)
     print(contents)
+    pass

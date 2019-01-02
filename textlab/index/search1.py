@@ -3,28 +3,31 @@
 import os
 import config
 from fileutil import FileUtil
-from index.Index import Index
+from index.index import Index
 from word2vec.vector import WV
-'''在网页文本库中检索,并保存检索到的文本'''
 
 
-class Search(object):
+class Search1(object):
+    """
+    在网页文本库中检索,并保存检索到的文本
+    """
 
-    def __init__(self, keys, pindexp):
+    def __init__(self, filename, pindexp):
         self.pindexp = pindexp
-        self.keys = keys
+        self.filename = filename
         self.savepath, self.kwpath = self.init_path()
 
     def init_path(self):
-        savepath = os.path.join(config.hidepath, '_'.join(self.keys))
-        kwpath = os.path.join(config.hidekwpath, '_'.join(self.keys))
-        if not os.path.exists(savepath):
-            os.mkdir(savepath)
-        else:
-            FileUtil.init_path(savepath)
+        print('init retrieve save directory.....')
+        dirs, f = os.path.split(self.filename)
+        savepath = os.path.join(config.hidepath, dirs[-2:], f.rstrip('.txt'))
+        kwpath = os.path.join(config.hidekwpath,  dirs[-2:])
+        FileUtil.init_path(savepath)
+        kwpath = os.path.join(kwpath, f)
+        FileUtil.init_path(kwpath)
         return savepath, kwpath
 
-    def query(self, keywords, kwpath=''):
+    def query(self, keywords):
         path = []    # 已经找到的文章列表
         num = []     # 每篇含文章组合的个数
         unmatch = 0  # 失配个数
@@ -44,8 +47,7 @@ class Search(object):
                 simikeys = WV.similarwords(kw)
                 t_paper = []
                 if not simikeys:
-                    print(
-                        ".................Failed to find similar words................")
+                    print(".................Failed to find similar words................")
                     flag = False
                 else:
                     for skw, similarity in simikeys:
@@ -65,10 +67,10 @@ class Search(object):
                     if not doc:
                         print("The keyword  '%s' is unMatch !" % kw)
                         unmatch += 1
+                        num.append(0)
                         hidekey.append('0')
                         keywords.pop(0)
                         path.append(None)
-                        # flag = True
                     else:
                         path.append(doc)
                         num.append(maxh)
@@ -77,19 +79,51 @@ class Search(object):
                     flag = True
             if not keywords:
                 path.append(paper)
-        hide_string = ' '.join(hidekey)
-        FileUtil.writefile(hide_string, kwpath)
-        return path
+                num.append(maxh)
+
+        return path, hidekey, num
+
+    # 不使用word2vec的查询
+    # def query(self, keywords, kwpath=''):
+    #     path = []  # 已经找到的文章列表
+    #     num = []  # 每篇含关键词的个数
+    #     maxh = 0  # 隐藏关键词的个数
+    #     q = ''  # 联合关键词
+    #     hidekey = []
+    #     while keywords:
+    #         kw = keywords[0]
+    #         paper = Index.search(self.pindexp, q + ' ' + kw, limit=None)
+    #         if paper:
+    #             keywords.pop(0)
+    #             hidekey.append(kw)
+    #             q = q + ' ' + kw
+    #             maxh += 1
+    #         else:  # 当联合搜索无法进行下去时, 失配
+    #             doc = Index.search(self.pindexp, q, limit=None)
+    #             if not doc:
+    #                 print("The keyword  '%s' is unMatch !" % kw)
+    #                 num.append(0)
+    #                 hidekey.append('0')
+    #                 keywords.pop(0)
+    #                 path.append(None)
+    #             else:
+    #                 path.append(doc)
+    #                 num.append(maxh)
+    #                 maxh = 0
+    #                 q = ''
+    #         if not keywords:
+    #             path.append(paper)
+    #             num.append(maxh)
+    #
+    #     return path, hidekey, num
 
     def retrieve(self, keywords):
         savepath, kwpath = self.savepath, self.kwpath
-        path = self.query(keywords, kwpath)
+        path, hidekey, num = self.query(keywords)
         for i, doc in enumerate(path):
             if not doc:
-                oldname = os.path.join(
-                    config.unMatch_path, config.unMatch_name)
-                newname = os.path.join(
-                    savepath, str(i) + '+' + config.unMatch_name)
+                oldname = os.path.join(config.unMatch_path, config.unMatch_name)
+                newname = os.path.join(savepath, str(i) + '+' + config.unMatch_name)
                 FileUtil.copyfile(oldname, newname)
             elif len(doc) > 1:
                 filepath = os.path.join(savepath, str(i))
@@ -105,27 +139,10 @@ class Search(object):
                 oldname = doc[0].get('path')
                 newname = os.path.join(savepath, str(i) + '+' + name)
                 FileUtil.copyfile(oldname, newname)
-        return path
+            hide_string = ' '.join(hidekey)
+            FileUtil.writefile(hide_string, kwpath)
+        return num
 
-    # def retrieve1(self, keywords):
-    #
-    #     savepath, kwpath = self.savepath, self.kwpath
-    #
-    #     res = self.query(keywords, kwpath)
-    #
-    #     for i, doc in enumerate(res):
-    #         if not doc:
-    #             oldname = os.path.join(
-    #                 config.unMatch_path, config.unMatch_name)
-    #             newname = os.path.join(
-    #                 savepath, str(i) + '+' + config.unMatch_name)
-    #             FileUtil.copyfile(oldname, newname)
-    #             continue
-    #         name = doc[0].get('title')
-    #         oldname = doc[0].get('path')
-    #         newname = os.path.join(savepath, str(i) + '+' + name)
-    #         FileUtil.copyfile(oldname, newname)
-    #     return res
 
 
 if __name__ == '__main__':

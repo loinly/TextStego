@@ -10,14 +10,15 @@ class DataOutput(object):
     def __init__(self, keyword):
         self.datas = []
         self.keyword = keyword
-        self._path()
+        self.filename = self.init_path()
 
-    def _path(self):
+    def init_path(self):
         name = '_'.join(self.keyword) + ".html"
         if not os.path.exists(config.spiderlink):
             os.makedirs(config.spiderlink)
-        self.filename = os.path.join(config.spiderlink, name)
-        self.output_head(self.filename)
+        filename = os.path.join(config.spiderlink, name)
+        self.output_head(filename)
+        return filename
 
     def add_data(self, data):
         for dat in data:

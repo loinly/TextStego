@@ -6,12 +6,11 @@ import config
 from encode.coding import Base64
 from fileutil import FileUtil
 
-'''
-最佳网页,位置信息
-'''
-
 
 class Location(object):
+    """
+    最佳网页,位置信息
+    """
 
     def __init__(self, keywords, col_bits):
         self.keywords = keywords
@@ -25,7 +24,13 @@ class Location(object):
             s = '0' * (bits - len(s)) + s
         return s
 
-    def location(self, keywords, text_list):   # 每个关键词在文本中的坐标
+    def location(self, keywords, text_list):
+        """
+        每个关键词在文本中的坐标
+        :param keywords:
+        :param text_list:
+        :return: row column p
+        """
         n = pow(2, self.col_bits)    # 一行关键词数量
         row = []
         col = []
@@ -68,10 +73,10 @@ class Location(object):
         return _url, _res, p
 
     #   位置信息描述
-    def describe(self, path):
+    def describe(self, name):
         info_kws = self.keywords[:]
         res_list = []
-        hidepath = os.path.join(config.hidepath, path)
+        hidepath = os.path.join(config.hidepath, name)
         for filename in os.listdir(hidepath):
             filename = os.path.join(hidepath, filename)
             if os.path.isdir(filename):         # dir: 需要选取最佳网页
@@ -85,9 +90,10 @@ class Location(object):
                 url, string, p = self.key2loc(keywords=info_kws, filename=filename)
                 res_string = Base64.encode(string)  # 编码之后的结果
                 _res = url + '/pos/' + res_string  # 连接
-                res_list.append([info_kws[:p+1], _res, os.path.split(filename)[1]])
+                res_list.append([info_kws[:p], _res, os.path.split(filename)[1]])
                 if p != -1:
                     info_kws = info_kws[p:]
+        print(res_list)
         return res_list
 
     #  最优网页的选取
@@ -112,11 +118,9 @@ class Location(object):
 
 
 if __name__ == '__main__':
-    # e = Location(keywords=['基于', '网络', '文本', '无载体', '信息', '隐藏', '技术'],col_bits=5)
-    # filename1 = r'F:\LabData\NetBigData\test\testh\0+52_50_925_云计算_云存储_云网络_云安全_云数据库_云管理与部署-华为云.txt'
-    # filename2 = r'F:\LabData\NetBigData\test\testh\1+56_19_757_网络规划设计师知识点汇总-小马的博客-51CTO博客.txt'
-    # informationx = '基于网络文本的无载体信息隐藏技术利用互联网上大量的网络文本来隐藏信息，提高了隐藏容量、成功率及传输效率'
-    # info1 = "基于 网络 文本 无载体 信息 隐藏 技术 利用 互联网 上 大量 网络"
-    # info2 = "文 本来 隐藏 信息 提高 隐藏 容量 率 传输 效率"
-    # urls, res, ps = e.key2loc(filename=filename1)
+    # info_kws = ['无载体', '信息', '隐藏', '能', '在', '不经', '任何', '修改', '情况', '下', '将', '秘密', '信息', '传递', '给', '载体', '成为', '热点', '针对', '文本', '大', '数据', '隐藏', '能力', '低', '检索', '效率', '低', '匹配', '不', '匹配', '问题', '提出', '一种', '利用', '互联网', '上海', '量', '文本', '进行', '无', '覆盖', '信息', '隐藏', '新', '方法']
+    # col_bits = 5
+    # loc = Location(keywords=info_kws, col_bits=col_bits)
+    # keys = '_'.join(['信息', '文本', '隐藏', '匹配', '载体', '能力', '进行', '秘密', '提出', '互联网'])
+    # loc.describe(keys)
     pass

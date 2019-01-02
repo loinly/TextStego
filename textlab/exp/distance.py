@@ -1,12 +1,12 @@
 #! python3
 # -*- coding:utf-8 -*-
 from gensim.models import Word2Vec
-from pretreatment.pretreatment import Prepaper
+from pretreatment.pretreatment import PreDeal
 
 
 def wmd(sent1, sent2):
-    sent1 = Prepaper.seg(sent1)
-    sent2 = Prepaper.seg(sent2)
+    sent1 = PreDeal.seg(sent1)
+    sent2 = PreDeal.seg(sent2)
     model = Word2Vec.load(r'F:\LabData\NetBigData\model\word2vec.model')
     #  这边是归一化词向量，不加这行的话，计算的距离数据可能会非常大
     model.init_sims(replace=True)
