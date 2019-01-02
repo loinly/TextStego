@@ -53,7 +53,6 @@ class Hide(object):
 if __name__ == '__main__':
     roots = "http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd={0}&pn={1}"
     h = Hide(root=roots)
-    # text1 ='基于网络文本的无载体信息隐藏技术利用互联网上大量的网络文本来隐藏信息，提高了隐藏容量、成功率及传输效率'
     text1 = '无载体信息隐藏由于能在不经任何修改的情况下将秘密信息传递给载体而成为热点。'
     res1 = h.info(info=text1, col_bits=5, pagenum=100)
     for items in res1:

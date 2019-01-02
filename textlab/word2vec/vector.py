@@ -12,12 +12,10 @@ from pretreatment.pretreatment import PreDeal
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 
 
-'''
-一行一句,主要考虑文件过大的情况,节省内存
-'''
-
-
 class MySentences(object):
+    """
+    一行一句,主要考虑文件过大的情况,节省内存
+    """
     def __init__(self, dirname):
         self.dirname = dirname
 
@@ -27,12 +25,10 @@ class MySentences(object):
                 yield line.split()
 
 
-''' 
-分割路径下所有文件
-'''
-
-
 class Seg(object):
+    """
+    分割路径下所有文件
+    """
 
     def __init__(self):
         logging.basicConfig(
@@ -60,7 +56,7 @@ class Seg(object):
 
 class WV(object):
     """
-    word2vec类
+    word2vec处理类
     """
 
     def __init__(self):
