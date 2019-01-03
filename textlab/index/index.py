@@ -44,9 +44,13 @@ class Index(object):
             # query = And([Term('content',u'中国'),Term('content','哈哈哈!')])
             # 直接构造Query对象
             query = parser.parse(querystring)
-            def start(): return int(time.time() * 1000)
+
+            def start():
+                return int(time.time() * 1000)
             results = searcher.search(query, limit=limit)
-            def end(): return int(time.time() * 1000)
+
+            def end():
+                return int(time.time() * 1000)
             print("match {0} | total token {1} ms, total query {2} records".format(
                 querystring, str((end() - start())), str(len(results))))
             for item in results:

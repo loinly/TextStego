@@ -1,13 +1,13 @@
 #! python3
 # -*- coding:utf-8 -*-
 import os
-'''
-用base64加密，将3个8位拆成4个6位，并转换成ascii码
-long_string%24可能余0个字符、1个字符、2个字符，共三种可能
-'''
 
 
 class Base64(object):
+    """
+    用base64加密，将3个8位拆成4个6位，并转换成ascii码
+    long_string%24可能余0个字符、1个字符、2个字符，共三种可能
+    """
 
     table = [
         'A',
