@@ -19,7 +19,7 @@ failedurlpath = r'F:\LabData\NetBigData\spiders\failed\failed_url'
 failedtextpath = r'F:\LabData\NetBigData\spiders\failed\failed_content'
 unMatch_path = r'F:\LabData\NetBigData\unmatch'
 unMatch_name = "unMatch.txt"
-hidepath = r'F:\LabData\NetBigData\test\testh\1k\1'
+hidepath = r'F:\LabData\NetBigData\test\testh'
 hidekwpath = r'F:\LabData\NetBigData\test\testkw'
 
 # root = r"F:\LabData\NetBigData"  # 给定一个文件夹路径,作为实验数据路径

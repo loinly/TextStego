@@ -23,8 +23,9 @@ class Search1(object):
         savepath = os.path.join(config.hidepath, dirs[-2:], f.rstrip('.txt'))
         kwpath = os.path.join(config.hidekwpath,  dirs[-2:])
         FileUtil.init_path(savepath)
+        if not os.path.exists(kwpath):
+            os.makedirs(kwpath)
         kwpath = os.path.join(kwpath, f)
-        FileUtil.init_path(kwpath)
         return savepath, kwpath
 
     def query(self, keywords):
